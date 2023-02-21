@@ -1,0 +1,556 @@
+
+//////// ================================== COLORS
+@import '../../utilities/variables';
+
+
+//////// ================================== START COMPONENT
+
+.StartComponent__holder {
+  position: relative;
+
+  .App_particleDiv {
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    left: 50% ;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    #tsparticles {
+      height: 100%;
+      canvas {
+       
+      }
+    }
+  } 
+  
+}
+
+//////// ================================== TopUi
+.StartComponent__TopUi {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transform: translate(-50%, 0) scale(1);
+  z-index: 1;
+  color: #aaa;
+  margin-top: 10px;
+  text-decoration: none;
+  cursor: pointer !important;
+  padding: 0 10px 5px;
+  border-radius: 10px;
+  box-shadow: 0 5px 3px 0px rgba(255,255,255,0);
+  border: 2px solid rgba(255,255,255,.3);
+  transition: all .3s ease-in-out;
+  animation: fadeIn 3s;
+  &:hover {
+    color: #fff;
+    border: 2px solid white;
+    box-shadow: 0 0px 8px 3px rgba(255,255,255,.1);
+  }
+}
+
+.fadeOut {
+  animation: fadeOut .3s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    top: -101%;
+  }
+}
+
+//////// ================================== FOOTER
+
+.StartPage__Footer {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 20px;
+    font-size: 1rem;
+    z-index: 1;
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    user-select: none;
+    animation: elementSlowAppear 2s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    p {
+      margin-top: 8px;
+    }
+
+    .StartPage__Footer_additionalText {
+        animation: slowAppear .2s ease-in-out forwards;
+        font-size: 1.05rem;
+        margin-top: 0;
+        transition: all .3s ease-in-out;
+
+    }
+}
+
+.StartPage__Footer_disappear {
+  color: $backgroundDarkColor !important;
+  bottom: -100%;
+}
+
+//////// ================================== PARTICLE SYSTEM DIV
+
+.App_particleDiv {
+  animation: elementSlowAppear 2s ease-in-out;
+}
+
+
+//////// ================================== MAIN UI
+
+.StartPage__UI_tab {
+
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+
+
+  &.StartPage__UI_buttonLight:hover .StartPage__NewPageAnchors {
+    opacity: 1;
+  }
+
+  .StartPage__UI {
+    position: absolute;
+    z-index: 1;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    animation: elementSlowAppear 2s ease-in-out;
+    justify-content: space-between;
+    transform: translate(-50%,-50%);
+    user-select: none;
+    
+    .StartPage__UI_optionDiv {
+        text-align: center;
+        font-weight: bolder;
+        position: relative;
+        &::before {
+            content: "";
+            
+        }
+    }
+      a {
+        text-decoration: none;
+      }
+      button, a {
+        
+          // display: block;
+          text-align: center;
+          width: 10em;
+          position: relative;
+          padding: 15px 0;
+
+          cursor: pointer;
+          outline: none;
+          background-color: transparent;
+          color: #fff;
+          letter-spacing: normal;
+          word-spacing: normal;
+          transition: 1s;
+          border-radius: 0.3em;
+          font-size: 35px;
+          font-family: 'Abel';
+        }
+
+        .StartPage__UI_spanSmall {
+          font-size: 1.8rem;
+        }
+
+        
+        .StartPage__UI_buttonLight {
+          border: 3px ridge $mainColor1;
+        }
+        .StartPage__UI_buttonHeavy {
+          border: 3px ridge $mainColor2;
+        }
+        .StartPage__UI_buttonSimple {
+          border: 3px ridge $mainColor3;
+          position: relative;
+          top: 100px;
+        }
+        
+        button::after, a::after {
+          content: "";
+          position: absolute;
+          top: -30px;
+          left: 3%;
+          width: 95%;
+          height: 30%;
+          background-color: $backgroundDarkColor;
+          transition: 0.5s;
+          transform-origin: center;
+          
+        }
+        
+        button::before, a::before {
+          content: "";
+          transform-origin: center;
+          position: absolute;
+          top: 90%;
+          left: 3%;
+          width: 95%;
+          height: 30%;
+          background-color: $backgroundDarkColor;
+          transition: 0.5s;
+        }
+        
+        button:hover::before, button:hover::after, a:hover::before, a:hover::after {
+          transform: scale(0)
+        }
+
+
+        .StartPage__UI_buttonHeavy:hover, .StartPage__UI_buttonSimple:hover, .StartPage__UI_buttonLight:hover {
+          transform: scale(1.05);
+        }
+        
+        .StartPage__UI_buttonHeavy:hover {
+          box-shadow: inset 0px 0px 25px $mainColor2;
+        }
+
+        .StartPage__UI_buttonLight:hover {
+          box-shadow: inset 0px 0px 25px $mainColor1;
+        }
+        .StartPage__UI_buttonSimple:hover {
+          box-shadow: inset 0px 0px 25px $mainColor3;
+        }
+        .StartPage__UI_spanLight, .StartPage__UI_spanHeavy{ 
+          font-weight: bold;
+          }
+
+        .StartPage__UI_spanLight {
+          color: $mainColor1;
+          animation: spanLightText 2s ease-in-out;
+        }
+
+        .StartPage__UI_spanHeavy {
+          color: $mainColor2;
+          animation: spanHeavyText 2s ease-in-out;
+        }
+  }
+}
+
+//////// ================================== ANCHORS
+
+
+
+.StartPage__NewPageAnchors {
+
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  top: 0;
+  z-index: 2;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &::before, &::after {
+
+  transition: border-radius 1s ease, right 10s ease;
+	width: 100%;
+	height: 100%;
+	background: $backgroundDarkColor;
+  }
+  &::before {
+    content: '';
+    border-radius: 0 0 0 0;
+  }
+  &::after {
+    content: '';
+	  border-radius: 0 0 0 0 ;
+  }
+}
+
+.StartPage__NewPageAnchors_heavy {
+  background: linear-gradient(0deg, $backgroundDarkColor 4%, rgb(177, 9, 189) 5%, rgb(177, 9, 189) 95%, $backgroundDarkColor 96%);
+  right: 0;
+  
+}
+
+.StartPage__NewPageAnchors_light {
+  background: linear-gradient(0deg, $backgroundDarkColor 4%, $mainColor1 5%, $mainColor1 95%, $backgroundDarkColor 96%);
+  left: 0;
+}
+
+// ========= TOP EXTENSION
+  
+.StartPage__NewPageAnchors_topExtension {
+  position: absolute;
+  top: 15px;
+  height: 50%;
+  width: 500px;
+}
+
+.StartPage__NewPageAnchors_topExtension_heavy {
+  border: 10px solid rgb(177, 9, 189);
+  left: 100%;
+  border-width: 25px 0 0 25px;
+  border-radius: 30px 10% 0 0 ;
+}
+.StartPage__NewPageAnchors_topExtension_light {
+  border: 10px solid $mainColor1;
+  right: 100%;
+  border-width: 25px 25px 0 0;
+  border-radius:  10% 30px 0 0 ;
+}
+
+// ========= BOTTOM EXTENSION
+
+.StartPage__NewPageAnchors_bottomExtension {
+  position: absolute;
+  bottom: 15px;
+  height: 50%;
+  width: 500px;
+}
+.StartPage__NewPageAnchors_bottomExtension_heavy {
+  border: 10px solid rgb(177, 9, 189);
+  left: 100%;
+  border-width: 0 0 25px 25px;
+  border-radius: 0 0 10% 30px ;
+}
+.StartPage__NewPageAnchors_bottomExtension_light {
+  border: 10px solid $mainColor1;
+  right: 100%;
+  border-width: 0 25px 25px 0;
+  border-radius: 0 0 30px 10% ;
+}
+
+// ========= ANCHOR TEXT
+
+.StartPage__NewPageAnchors_text_heavy {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 120%;
+  font-size: 13rem;
+}
+
+.StartPage__NewPageAnchors_text_light {
+  writing-mode: vertical-lr;
+
+  position: absolute;
+  right: 120%;
+  font-size: 13rem;
+}
+
+// ========= ANCHOR BACKGROUND
+
+.StartPage__NewPageAnchors_backgroundCover {
+  height: 100%;
+  width: 150vw;
+  background-color: $backgroundDarkColor;
+  position: absolute;
+  top: 0;
+}
+
+.StartPage__NewPageAnchors_backgroundCover_heavy {
+  left: 100%;
+}
+
+.StartPage__NewPageAnchors_backgroundCover_light {
+  right: 100%;
+}
+
+// ========= ANCHOR ROUND BORDER
+
+.StartPage__NewPageAnchors_roundBorder_heavy{
+  &::before {
+    content: '';
+    transition: border-radius .3s ease;
+    border-radius: 0 0 70% 0;
+  }
+  &::after {
+    content: '';
+    transition: border-radius .3s ease;
+	  border-radius: 0 70% 0 0 ;
+  }
+}
+
+.StartPage__NewPageAnchors_roundBorder_light{
+  &::before {
+    content: '';
+    transition: border-radius .3s ease;
+    border-radius: 0 0 0 70%;
+  }
+  &::after {
+    content: '';
+    transition: border-radius .3s ease;
+	  border-radius: 70% 0 0 0 ;
+  }
+}
+
+// ========= ANCHOR SWIPE
+
+.StartPage__NewPageAnchors_swipe_heavy {
+  transition: all 1s ease;
+  right: 150%;
+  z-index: 10;
+  filter: blur(3px);
+  // FIX FOR DISAPPEARING PULL EFFECT OF THE PAGE
+  &::before {
+    content: '';
+    transition: border-radius .3s ease;
+    border-radius: 0 0 70% 0;
+  }
+  &::after {
+    content: '';
+    transition: border-radius .3s ease;
+	  border-radius: 0 70% 0 0 ;
+  }
+}
+
+.StartPage__NewPageAnchors_swipe_light {
+  transition: all 1s ease;
+  left: 150%;
+  z-index: 10;
+  // FIX FOR DISAPPEARING PULL EFFECT OF THE PAGE
+  &::before {
+    content: '';
+    transition: border-radius .3s ease;
+    border-radius: 0 0 0 70%;
+  }
+  &::after {
+    content: '';
+    transition: border-radius .3s ease;
+	  border-radius: 70% 0 0 0 ;
+  }
+}
+
+
+
+//////// ================================== ANIMATIONS
+
+
+@keyframes elementSlowAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slowAppear{
+  0% {opacity: 0}
+  100%{ opacity: 1}
+}
+
+@keyframes buttonAppear {
+  0% {
+    color: rgba(0,0,0,0);
+
+  }
+  100% {
+    color: rgba(255,255,255,1);
+
+  }
+}
+
+@keyframes spanHeavyText {
+  0% {color: rgba(0,0,0,0)}
+  100% {color: rgba(243, 94, 255,1)}
+}
+
+@keyframes spanLightText {
+  0% {color: rgba(0,0,0,0)}
+  100% {color: rgba(94, 188, 255,1)}
+}
+
+////////////////////// media queries
+
+@media only screen and (max-width: 1670px) {
+  .StartPage__UI_tab {
+    .StartPage__UI  {
+      button, a {
+        width: 250px;
+      }
+    }
+    .StartPage__NewPageAnchors  {
+      width: 150px;
+    }
+  }
+  .StartComponent__holder {
+    position: relative;
+  
+    
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .StartPage__UI_tab {
+    .StartPage__UI  {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      top: 59%;
+      button, a {
+        width:50%
+      }
+    }
+    .StartPage__NewPageAnchors  {
+      width: 120px;
+    }
+  }
+  .StartComponent__holder {
+  
+    .App_particleDiv {
+      left: 50% ;
+      top: 23%;
+      
+    } 
+    
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .StartPage__Footer {
+    display: none;
+  }
+  .StartPage__UI_tab {
+    
+    .StartPage__UI  {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      transform: translate(-50%,0);
+      top: initial;
+      bottom: 10%;
+      button, a {
+        width:100%;
+        background: $backgroundDarkColor;
+      }
+    }
+    .StartPage__NewPageAnchors  {
+      display: none;
+    }
+
+  }
+  .StartComponent__holder {
+  
+    .App_particleDiv {
+      left: 50% ;
+      top: 23%;
+      
+    } 
+    
+  }
+}

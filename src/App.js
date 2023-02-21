@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState, useEffect} from 'react';
 
-function App() {
+import './App.scss'
+
+import StartPage from './pages/StartPage/StartPage'
+import LightPage from './pages/LightPage/LightPage';
+import HeavyPage from './pages/HeavyPage/HeavyPage';
+
+
+const App = () => {
+
+  // Current state ['start', 'light', 'heavy', ]
+  const [webpageMode, setWebpageMode] = useState('start');
+
+  //WHEN DIFFERENT PAGE IS BEING SELECTED
+  const handleClick = (newWebpage) => {
+    ///TODO: THIS IS A TEMPORARY FIX, GOTTA MAKE IT LOOK MORE CLEAN
+    // document.querySelector('.StartComponent__TopUi').classList.add('fadeOut');
+    setTimeout(() => {
+      setWebpageMode(newWebpage);
+    }, 1000)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {webpageMode === 'start' ? <StartPage handleClick={handleClick} webpageMode={webpageMode} />
+      : webpageMode === 'light' ? <LightPage />
+      : webpageMode === 'heavy' ?  <HeavyPage />
+      : 'Something went wrong'
+      }
+    </>
+  )
+  
 }
 
 export default App;

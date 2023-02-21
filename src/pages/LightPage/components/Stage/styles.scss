@@ -1,0 +1,45 @@
+
+//IMG STAGE STUFF IS IN APP.SCSS for better clarity with App and App-rotated classes
+  
+  .interactive__lamp {
+    
+    position: absolute;
+    width: 13%; 
+    height: 35%;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    .light {
+      position: absolute;
+      left: 30%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+      width: 300%;
+      pointer-events:none;
+      height: 300%;
+      transition: all .3s ease-in-out;
+      background: radial-gradient(circle, rgba(246,229,202,0.0) 5%, rgba(246,229,202,0.0) 20%, rgba(0,0,0,0) 46%);
+  
+    }
+  }
+  
+  .interactive__lamp_enabled {
+    .light {
+      transition: all .3s ease-in-out;
+      background: radial-gradient(circle, rgba(246,229,202,0.5) 5%, rgba(246,229,202,0.3) 20%, rgba(0,0,0,0) 46%);
+  
+    }
+    
+  }
+  
+  
+
+  
+  .fromTop {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  
+  
+ 

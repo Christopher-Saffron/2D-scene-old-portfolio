@@ -1,0 +1,439 @@
+//// ======== COLORS
+@import '../../utilities/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.black {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: $backgroundDarkColor;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: 'JapFont';
+  src: url('./assets/fonts/nightintokyo-bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/nightintokyo-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'NukuNuku';
+  src: url('./assets/fonts/nuku1-webfont.woff2') format('woff2'),
+       url('./assets/fonts/nuku1-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////////////////////////////////////////////////////
+body {
+  overflow: hidden; /* Hide scrollbars */
+  background-color: $backgroundDarkColor;
+  
+}
+
+.img__fullScreen_doorLeft {
+  position: absolute;
+  right: 50%;
+  height: 100%;
+  animation: doorLeftAnim 2s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.img__fullScreen_doorLeft_halfOpen {
+  transition: all .4s ease-in-out;
+  right: 90%;
+}
+
+.img__fullScreen_doorRight {
+  position: absolute;
+  left: 50%;
+
+  height: 100%;
+  animation: doorRightAnim 2s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.img__fullScreen_doorRight_halfOpen {
+  transition: all .4s ease-in-out;
+  left: 90%;
+}
+
+.img__fullScreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  
+  // transform-origin: center;
+  transform: translate(-50%, 0) rotate(0deg) scale(1);
+}
+
+ 
+
+
+.LightPage {
+  transform-origin: center;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  max-width: 1920px;
+  max-height: 1080px;
+  background-color: $backgroundDarkColor;
+  // transform-box: view-box;
+  color: black;
+  
+  .img__fullScreen {
+    max-width: 1920px;
+    max-height: 1080px;
+    min-width: 1600px;
+  }
+  .img__inside {
+    animation: insideImgAnim 2s ease-in-out;
+  }
+}
+
+
+
+.LightPage-rotated {
+  transform: translate(-50%, -50%) rotate(90deg);
+  // transform-origin:bottom left;
+  position:absolute;
+  // top:-100vw;
+  height:100vw;
+  width:100vh;
+  .img__fullScreen {
+    max-width: 1920px;
+    max-height: 1080px;
+    min-width: 100vh;
+    min-height: 100vw;
+  }
+  .img__inside {
+    animation: insideImgAnim2 2s ease-in-out;
+  }
+}
+
+//THIS CLASS IS ADDED EVERYTIME DOORS CLOSE, IN ORDER TO HIDE EVERY SECTION'S ELEMNTS SUCH AS SCROLLS, LAPTOP, RESUME OR SHOJI PAINTINGS
+.LightPage-HideAll {
+  .resume__holder   {
+    animation: hideFullBottom .3s ease-in-out forwards;
+  }
+  .mainContent__holder, .contact__holder, .projects__LaptopTab {
+    animation: hideFullTop .3s ease-in-out forwards;
+  }
+  .projects__LaptopTab {
+    animation: hideLaptop .3s ease-in-out forwards;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/// ////////////////////////////////////////////////////////////////////////////////////////////////// IMAGES
+/// //////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////////////////////////////////////////////////////
+/// ////////////////////////////////////////////////////////////////////////////////////////////////// WELCOME DIV
+
+
+
+/////////// ====================================================================================================
+/// /////////// ====================================================================================================
+/// /////////// ==================================================================================================== ANIMATIONS
+
+
+
+
+@keyframes mainContentHolderAppear {
+  0% {
+    top: -100%;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes mainContentHolderHide {
+  0% {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 100%;
+    transform: translate(-50%, 0);
+  }
+}
+
+
+@keyframes navbarDivAnim {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes insideImgAnim2 {
+  0% {
+    transform: translate(-50%, 0) rotate(0deg) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes insideImgAnim {
+  0% {
+    transform: translate(-50%, 0) rotate(0deg) scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes doorRightAnim {
+  0% {
+    left: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes doorLeftAnim {
+  0% {
+    right: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    right: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes welcomeDivAnim {
+  0% {
+    transform:translate(-50%, -50%) scale(0);
+    width: 0;
+    color: rgba(200,0,0,.0);
+  }
+  60% {
+    color: rgba(200,0,0,.0);
+  }
+
+   100% {
+    transform: translate(-50%, -50%) scale(1);
+    width: 500px;
+    color: $lightPageRed1;
+   }
+}
+
+
+
+@keyframes welcomeDivDisappearAnim {
+  0% {
+    top: 50%;
+  }
+   100% {
+    top: -100%;
+   }
+}
+
+@keyframes welcomeDivText1 {
+  0% {
+    color: rgba(200,0,0,0);
+    font-size: 2rem;
+
+  }
+  30% {
+    color: rgba(200,0,0,0);
+
+
+  }
+  70% {
+    color: $lightPageRed1;
+    font-size: 3.8rem;
+  }
+
+
+  100% {
+    color: rgba(200,0,0,.0);
+  }
+
+
+}
+
+@keyframes welcomeDivText2 {
+  0% {
+    color: rgba(200,0,0,0);
+
+
+  }
+  70% {
+    color: $lightPageRed1;
+
+  }
+
+
+  100% {
+    color: rgba(200,0,0,.0);
+  }
+}
+
+
+@keyframes welcomeDivScrollRight {
+  0% {
+    right: 50%;
+    transform: translate(0,-50%) scale(0);
+  }
+   100% {
+    right: 95%;
+    transform: translate(0,-50%) scale(1);
+   }
+}
+
+@keyframes welcomeDivScrollLeft {
+  0% {
+    left: 50%;
+    transform: translate(0,-50%) scale(0);
+  }
+   100% {
+    left: 95%;
+    transform: translate(0,-50%) scale(1);
+   }
+}
+
+
+
+@keyframes skipWelcomeAnim {
+  0% {
+    top: 50%;
+  }
+   100% {
+    top: -100%;
+   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contactAppear {
+  0% {
+    top: 100%;
+    backdrop-filter: blur(0px);
+    box-shadow: inset 0px 0px 49px 1px rgba(0, 0, 0, 0);
+    background: rgba(255,255,255,0);
+  }
+  100% {
+    top: 55%;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0px 0px 49px 1px rgba(0, 0, 0, 1);
+    background: rgba(255,255,255,.6);
+  }
+}
+
+@keyframes hideFullBottom {
+  0% {
+    bottom: 0%;
+
+  }
+  100% {
+    bottom: -100%;
+
+  }
+}
+
+@keyframes hideFullTop {
+  0% {
+    top: 50%;
+
+  }
+  100% {
+    top: 150%;
+
+  }
+}
+
+@keyframes hideLaptop {
+  0% {
+    top: 0% !important;
+
+  }
+  100% {
+    top: 100% !important;
+
+  }
+}
+
+
+
+/////////// ====================================================================================================
+/// /////////// ====================================================================================================
+/// /////////// ==================================================================================================== MEDIA QUERIES
+
+@media only screen and (max-width: 1230px) {
+  .img__navbar {
+    .img__navbar_span {
+      padding: 5% 3%;
+      font-size: 2rem;
+      &:active {
+        padding: 7% 3% 5%;
+      }
+    }
+    .img__navbar_spanActive {
+      padding-top: 8%;
+      border-color: #dadddd;
+      color: #dadddd;
+      box-shadow: 0 0 5px 5px rgba(0,0,0,.6);
+      background-color: rgb(255, 51, 0);
+      &:active {
+        padding: 9% 3% 5%;
+      }
+      &:hover {
+        border-color: #dadddd;
+        color: #dadddd;
+        background-color: rgb(255, 51, 0);
+      }
+    }
+  }
+}
