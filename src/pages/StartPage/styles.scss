@@ -27,27 +27,30 @@
 
 //////// ================================== TopUi
 .StartComponent__TopUi {
-  color: white;
   position: absolute;
+  z-index: 152;
   top: 0;
   left: 50%;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   transform: translate(-50%, 0) scale(1);
   z-index: 1;
+  margin-top: 100px;
   color: #aaa;
-  margin-top: 10px;
+  opacity: .6;
   text-decoration: none;
   cursor: pointer !important;
-  padding: 0 10px 5px;
   border-radius: 10px;
+  padding: 15px 10px;
   box-shadow: 0 5px 3px 0px rgba(255,255,255,0);
   border: 2px solid rgba(255,255,255,.3);
   transition: all .3s ease-in-out;
-  animation: fadeIn 3s;
+  background-color: transparent;
   &:hover {
     color: #fff;
+    opacity: 1;
     border: 2px solid white;
+    transform: translate(-50%, 0) scale(1.05);
     box-shadow: 0 0px 8px 3px rgba(255,255,255,.1);
   }
 }
@@ -133,7 +136,7 @@
     height: max-content;
     display: flex;
     flex-direction: row;
-    animation: elementSlowAppear 2s ease-in-out;
+    animation: elementSlowAppear 1s ease-in-out;
     justify-content: space-between;
     transform: translate(-50%,-50%);
     user-select: none;
@@ -151,13 +154,11 @@
         text-decoration: none;
       }
       button, a {
-        
           // display: block;
           text-align: center;
           width: 10em;
           position: relative;
           padding: 15px 0;
-
           cursor: pointer;
           outline: none;
           background-color: transparent;
@@ -174,6 +175,14 @@
           font-size: 1.8rem;
         }
 
+        .StartPage__UI_hidden {
+          display: none;
+          border: 3px ridge rgba(220,190,220);
+          // border-width: 4px;
+          // border-style: ridge;
+          // border-image: linear-gradient(0deg, rgb(39, 226, 240), rgb(203, 103, 253)) 1;
+        }
+
         
         .StartPage__UI_buttonLight {
           border: 3px ridge $mainColor1;
@@ -187,7 +196,7 @@
           top: 100px;
         }
         
-        button::after, a::after {
+        button::after, a::after, .StartPage__UI_hidden::after {
           content: "";
           position: absolute;
           top: -30px;
@@ -200,7 +209,7 @@
           
         }
         
-        button::before, a::before {
+        button::before, a::before, .StartPage__UI_hidden::before {
           content: "";
           transform-origin: center;
           position: absolute;
@@ -212,12 +221,12 @@
           transition: 0.5s;
         }
         
-        button:hover::before, button:hover::after, a:hover::before, a:hover::after {
+        button:hover::before, button:hover::after, a:hover::before, a:hover::after, .StartPage__UI_hidden:hover::before, .StartPage__UI_hidden:hover::after {
           transform: scale(0)
         }
 
 
-        .StartPage__UI_buttonHeavy:hover, .StartPage__UI_buttonSimple:hover, .StartPage__UI_buttonLight:hover {
+        .StartPage__UI_buttonHeavy:hover, .StartPage__UI_buttonSimple:hover, .StartPage__UI_buttonLight:hover, .StartPage__UI_hidden:hover {
           transform: scale(1.05);
         }
         
@@ -230,6 +239,9 @@
         }
         .StartPage__UI_buttonSimple:hover {
           box-shadow: inset 0px 0px 25px $mainColor3;
+        }
+        .StartPage__UI_hidden:hover {
+          box-shadow: inset 0px 0px 25px rgba(220,190,220);
         }
         .StartPage__UI_spanLight, .StartPage__UI_spanHeavy{ 
           font-weight: bold;
@@ -435,7 +447,194 @@
   }
 }
 
+//////// ================================== FAST PREVIEW
 
+.fastPreview__tab {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  // display: grid;
+  // grid-template-columns: 4fr 1fr;
+  top: -100%;
+  gap: 25px;
+  background: $backgroundDarkColor;
+  animation: navbarDivAnim .6s ease-in-out forwards, fadeIn .6s ease-in-out;
+  .fastPreview__tab_display {
+    border: 1px solid rgba(255,255,255,.2);
+    flex-grow: 1;
+    position: relative;
+    .fastPreview__tab_displayMain {
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,.2);
+      position: absolute;
+      top: 50%;
+      left:50%;
+      width: 80%;
+      transform: translate(-50%,-50%);
+      box-shadow: 0 0 4px rgba(255,255,255,.3);
+      .fastPreview__tab_displayMain_pic {
+        display: block;
+        width: 100%;
+        margin: auto;
+      }
+      .fastPreview__tab_info {
+        background-color: rgba(30,15,24,.3);
+        padding: 10px 20px;
+        font-size: 1.4rem;
+        border-top: 1px solid rgba(255,255,255,.2);
+        color: #fee;
+        .fastPreview__tab_displayMain_itemName, .fastPreview__tab_displayMain_itemDescription, .fastPreview__tab_displayMain_itemLink {
+          margin: 4px 0;
+        }
+        .fastPreview__tab_displayMain_itemName {
+          font-weight: bold;
+          font-size: 1.6rem;
+        }
+        .fastPreview__tab_displayMain_itemDescription {
+  
+        }
+        .fastPreview__tab_displayMain_itemLink {
+          
+          display: block;
+          a {
+            color: white;
+          }
+        }
+      }
+      
+    }
+  }
+
+  .fastPreview__tab_scroll {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    scrollbar-color: #606060 #393939;
+    scrollbar-width: thin;
+
+
+    .fastPreview__tab_scrollContainer {
+      overflow-y:auto;
+      overflow-x: hidden;
+      border: 1px solid rgba(255,255,255,.2);
+      height: 90%;
+      width: 100%;
+
+
+      &::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+      }
+      &::-webkit-scrollbar-corner {
+        background: #393939;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #606060;
+        border: 1px solid #393939;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #868686;
+      }
+      &::-webkit-scrollbar-track {
+        border: 1px solid #393939;
+        background-color: #393939;
+      }
+      
+
+      .fastPreview__tab_item {
+        width: 100%;
+        border: 3px solid transparent;
+        border-bottom: 2px solid rgba(255,255,255,.3);
+        min-height: 250px;
+        height: max-content;
+        cursor:pointer;
+        transition: all .15s ease-in-out;
+        opacity: .6;
+        position: relative;
+        // &::before {
+        //   content: '';
+        //   right: 100%;
+        //   height: 100%;
+        //   width: 10px;
+        //   border-radius: 25px 0 0 25px;
+        //   opacity: 0;
+        //   position: absolute;
+        // }
+        a {
+          display: none;
+        }
+        &:hover {
+          .fastPreview__tab_itemImg {
+            transform: scale(1.03);
+          }
+          // &::before {
+          //   opacity: .3;
+          // }
+          border: 2px solid rgba(255,255,255,.5);
+          opacity: 1;
+        }
+        .fastPreview__tab_itemImg {
+          transition: all .15s ease-in-out;
+          display: block;
+          padding: 10px;
+          width: 100%;
+        }
+        .fastPreview__tab_itemName, .fastPreview__tab_itemDescription {
+          text-align: center;
+        }
+        .fastPreview__tab_itemName {
+          color: #fff;
+          font-size: 1.2rem;
+          margin: 10px 0;
+        }
+        .fastPreview__tab_itemDescription {
+          color: #bbb;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .fastPreview__tab_return {
+      
+      border: 1px solid rgba(255,255,255,.4);
+      margin: auto;
+      margin-top: 15px;
+      text-align: center;
+      flex-grow: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: relative;
+      width: 100%;
+      cursor:pointer;
+      transition: all .3s ease-in-out;
+      color: rgba(255,255,255,.6);
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: inset 0 0 9px 3px rgba(255,255,255,.4);
+        color: rgba(255,255,255,1);
+      }
+      span {
+        position: absolute;
+        top: 50%;
+        left:50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+  }
+}
+
+.fastPreview__tab_hide {
+  animation: fadeOut .6s ease-in-out,
+}
 
 //////// ================================== ANIMATIONS
 
@@ -483,6 +682,7 @@
       button, a {
         width: 250px;
       }
+      
     }
     .StartPage__NewPageAnchors  {
       width: 150px;
@@ -496,14 +696,21 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .StartComponent__TopUi {
+    display: none;
+  }
   .StartPage__UI_tab {
     .StartPage__UI  {
       flex-direction: column;
       gap: 30px;
       align-items: center;
-      top: 59%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       button, a {
         width:50%
+      }
+      .StartPage__UI_hidden {
+        display: block;
       }
     }
     .StartPage__NewPageAnchors  {
@@ -521,7 +728,47 @@
   }
 }
 
+
+@media only screen and (max-width: 1100px) {
+  .fastPreview__tab {
+    .fastPreview__tab_display {
+      display: none;
+    }
+    .fastPreview__tab_scroll {
+      width: 100%;
+      .fastPreview__tab_scrollContainer {
+
+        .fastPreview__tab_item {
+          padding: 30px;
+          .fastPreview__tab_itemImg {
+            width: 70%;
+            margin: auto;
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+
 @media only screen and (max-width: 650px) {
+
+  .fastPreview__tab {
+    .fastPreview__tab_scroll {
+      .fastPreview__tab_scrollContainer {
+        .fastPreview__tab_item {
+          padding: 10px;
+          .fastPreview__tab_itemImg {
+            width: 90%;
+          }
+        }
+      }
+      
+    }
+  }
+
+
   .StartPage__Footer {
     display: none;
   }
@@ -530,10 +777,7 @@
     .StartPage__UI  {
       flex-direction: column;
       gap: 30px;
-      align-items: center;
-      transform: translate(-50%,0);
-      top: initial;
-      bottom: 10%;
+
       button, a {
         width:100%;
         background: $backgroundDarkColor;
@@ -552,5 +796,21 @@
       
     } 
     
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .fastPreview__tab {
+    .fastPreview__tab_scroll {
+      .fastPreview__tab_scrollContainer {
+        .fastPreview__tab_item {
+          padding: 5px;
+          .fastPreview__tab_itemImg {
+            width: 100%;
+          }
+        }
+      }
+      
+    }
   }
 }

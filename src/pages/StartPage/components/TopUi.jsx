@@ -1,10 +1,10 @@
 import React from 'react'
 
-const TopUi = () => {
+const TopUi = ({toggleQuickPreview}) => {
   return (
-    <a href='' className='StartComponent__TopUi'>
-        Only show top 5 projects
-    </a>
+    <button onClick={() => {toggleQuickPreview(true)}} className='StartComponent__TopUi'>
+        VIEW PROJECTS ONLY
+    </button>
   )
 }
 

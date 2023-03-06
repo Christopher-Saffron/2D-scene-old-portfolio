@@ -7,10 +7,10 @@
   #root {
     max-width: 1920px;
     max-height:1920px;
-    margin: auto;
+    margin: auto !important;
   }
   
-  html, body, #root {
+  html, body {
     width: 100vw;
     height: 100vh;
     background-color: rgb(5,3,3);

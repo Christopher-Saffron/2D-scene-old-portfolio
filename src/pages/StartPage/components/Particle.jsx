@@ -12,8 +12,7 @@ import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 loadPolygonMaskPlugin(tsParticles); // awaitable
 
 
-const Particle = ({}) => {
-  const [foxScale, setFoxScale] = useState(1.1)
+const Particle = ({foxScale, showParticles, setShowParticles}) => {
 
   const particlesInit = useCallback(async engine => {
       // console.log(engine);
@@ -23,41 +22,10 @@ const Particle = ({}) => {
       await loadFull(engine);
   }, []);
 
-  function changeFoxSize() {
-    console.log(window.innerWidth)
-    if (window.innerWidth > 1400) {
-      if (foxScale === 1.1) {return}
-      setFoxScale(1.1)
-    } else if (window.innerWidth > 1300 && window.innerWidth < 1400) {
-      if (foxScale === .9) {return}
-      setFoxScale(.9)
-    } else if (window.innerWidth > 1200 && window.innerWidth < 1300) {
-      if (foxScale === .7) {return}
-      setFoxScale(.7)
-    } else if (window.innerWidth < 1200) {
-      if (foxScale === .6) {return}
-      setFoxScale(.6)
-    }
-  }
-
-  useEffect(() => {
-    console.log(foxScale)
-  }, [foxScale])
-
-  useLayoutEffect(() => {
-    changeFoxSize();
-  })
-
-  useEffect(() => {
-    
-    window.addEventListener('resize', changeFoxSize)
-    return () => {
-      window.removeEventListener('resize', changeFoxSize)
-    }
-  }, [])
+  
 
 
-  return (
+  return (showParticles &&
     <Particles
                 id="tsparticles"
                 init={particlesInit}
@@ -92,7 +60,7 @@ const Particle = ({}) => {
       },
       "detectRetina": false,
       "duration": 0,
-      "fpsLimit": 23,
+      "fpsLimit": 20,
       "interactivity": {
         "detectsOn": "window",
         "events": {

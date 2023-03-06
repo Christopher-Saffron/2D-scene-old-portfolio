@@ -1,10 +1,9 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 import './App.scss'
 
 import StartPage from './pages/StartPage/StartPage'
 import LightPage from './pages/LightPage/LightPage';
-import HeavyPage from './pages/HeavyPage/HeavyPage';
 
 
 const App = () => {
@@ -25,7 +24,6 @@ const App = () => {
     <>
       {webpageMode === 'start' ? <StartPage handleClick={handleClick} webpageMode={webpageMode} />
       : webpageMode === 'light' ? <LightPage />
-      : webpageMode === 'heavy' ?  <HeavyPage />
       : 'Something went wrong'
       }
     </>

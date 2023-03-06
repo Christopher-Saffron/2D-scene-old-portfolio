@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import NewPageAnchors from './NewPageAnchors'
+import TopUi from './TopUi'
 
-const UI = ({color, setColor, handleClick}) => {
+const UI = ({color, setColor, handleClick, toggleQuickPreview}) => {
     const [hoverOver, setHoverOver] = useState('none')
     const [newSelectedPage, setNewSelectedPage] = useState('none')
 
-    //HANDLE NEW FOX COLOR
+    // HANDLE NEW FOX COLOR
     const handleHover = (newColor) => {
         if(color === newColor) {
             return;
@@ -44,7 +45,16 @@ const UI = ({color, setColor, handleClick}) => {
         <NewPageAnchors newSelectedPage={newSelectedPage} pageType={'heavy'} hoverOver={hoverOver} />
         <NewPageAnchors newSelectedPage={newSelectedPage} pageType={'light'} hoverOver={hoverOver} />
         <div className='StartPage__UI '>
-            <button className='StartPage__UI_buttonLight' onClick={() => {handleClickAnchor('light')}} onMouseLeave={() => {handlePageAnchors('none')}} onMouseEnter={() => {handleHover('#5ebcff'); handlePageAnchors('light')}}>
+
+        <button className='StartPage__UI_hidden' onClick={() => {toggleQuickPreview(true)}} >
+                <span >VIEW</span>
+                <br/>
+                <span >PROJECTS</span>
+                <br/>
+                <span>ONLY</span>
+        </button>
+
+            <button className='StartPage__UI_buttonLight' onClick={() => {handleClickAnchor('light')}} onMouseLeave={() => {handlePageAnchors('none')}}  onMouseEnter={() => {handleHover('#5ebcff'); handlePageAnchors('light')}}>
                 <span className='StartPage__UI_spanLight'>OLD 2D</span>
                 <br/>
                 <span className='StartPage__UI_spanSmall'>Portfolio</span>
@@ -52,16 +62,15 @@ const UI = ({color, setColor, handleClick}) => {
                 <span className='StartPage__UI_spanSmall'>Website</span>
             </button>
 
-            <a target="_blank" rel="noopener noreferrer" href='' className='StartPage__UI_buttonHeavy' onMouseLeave={() => {handlePageAnchors('none')}} onMouseEnter={() => {handleHover('#f35eff'); handlePageAnchors('heavy')}}>
+            <a target="_blank" rel="noopener noreferrer" href='https://portfolio3d-two.vercel.app/' className='StartPage__UI_buttonHeavy' onMouseLeave={() => {handlePageAnchors('none')}} onMouseEnter={() => {handleHover('#f35eff'); handlePageAnchors('heavy')}}>
                 <span className='StartPage__UI_spanHeavy'>NEW 3D</span>
                 <br/>
                 <span className='StartPage__UI_spanSmall'>Portfolio</span>
                 <br/>
                 <span className='StartPage__UI_spanSmall'>&#40;Unstable&#41;</span>
             </a>
-
-            
         </div>
+        <TopUi toggleQuickPreview={toggleQuickPreview} />
     </div>
   )
 }

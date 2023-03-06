@@ -13,7 +13,7 @@ const NewPageAnchors = ({pageType, hoverOver, newSelectedPage}) => {
       <div className={`StartPage__NewPageAnchors_topExtension StartPage__NewPageAnchors_topExtension_${pageType}`} />
       <div className={`StartPage__NewPageAnchors_bottomExtension StartPage__NewPageAnchors_bottomExtension_${pageType}`} />
       
-      <div className={`StartPage__NewPageAnchors_text_${pageType}`}>{pageType.toUpperCase()}</div>
+      {/* <div className={`StartPage__NewPageAnchors_text_${pageType}`}>{pageType.toUpperCase()}</div> */}
       </div>
   )
 }
