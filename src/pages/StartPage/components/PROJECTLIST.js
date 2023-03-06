@@ -50,6 +50,22 @@ const PROJECTLIST = [
         link: 'https://chatapp-six-pi.vercel.app/',
         linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
     },
+    
+    {
+        img: 'preview-szafranprojektserver.jpg',
+        name: 'Szafran Projekt - server',
+        description: 'Locally running server to keep track of all projects. No live version.',
+        link: '',
+        linkGithub: 'https://github.com/Havir-S/szafranprojekt-dev-server'
+    },
+    {
+        img: 'preview-szafranprojektserverclient.jpg',
+        name: 'Szafran Projekt - server client',
+        description: 'Client interface to interact with the server. No live version.',
+        link: '',
+        linkGithub: 'https://github.com/Havir-S/szafranprojekt-dev-client-template'
+    },
+    
 ]
 
 export {PROJECTLIST}
