@@ -740,6 +740,9 @@
 
         .fastPreview__tab_item {
           padding: 30px;
+          a {
+            display: block;
+          }
           .fastPreview__tab_itemImg {
             width: 70%;
             margin: auto;
