@@ -29,27 +29,30 @@
 .StartComponent__TopUi {
   position: absolute;
   z-index: 152;
-  top: 0;
+  bottom: 10%;
   left: 50%;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   transform: translate(-50%, 0) scale(1);
+  letter-spacing: .3rem;
   z-index: 1;
-  margin-top: 100px;
+  margin-bottom: 50px;
   color: #aaa;
-  opacity: .6;
+  opacity: .4;
   text-decoration: none;
   cursor: pointer !important;
+  font-family: NukuNuku, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
   border-radius: 10px;
   padding: 15px 10px;
   box-shadow: 0 5px 3px 0px rgba(255,255,255,0);
-  border: 2px solid rgba(255,255,255,.3);
+  border: 2px solid rgba(255,255,255,.05);
   transition: all .3s ease-in-out;
   background-color: transparent;
   &:hover {
     color: #fff;
     opacity: 1;
-    border: 2px solid white;
+    border: 2px solid rgba(255,255,255,1);
     transform: translate(-50%, 0) scale(1.05);
     box-shadow: 0 0px 8px 3px rgba(255,255,255,.1);
   }
