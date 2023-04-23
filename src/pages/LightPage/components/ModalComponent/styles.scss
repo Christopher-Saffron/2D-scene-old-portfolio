@@ -45,3 +45,9 @@
         }
     }
 }
+
+@media (orientation: landscape) {
+    .modal__main {
+      border: 10px solid red !important;
+    }
+  }

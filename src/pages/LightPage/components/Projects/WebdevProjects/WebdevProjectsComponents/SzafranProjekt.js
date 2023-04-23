@@ -20,12 +20,12 @@ const SzafranProjekt = ({showInModal}) => {
         
       </div>
       <p className='projectShow__paragraph'>
-        <span className='projectShow__secondColor'>tl;dr </span> Szafran Projekt is a small company belonging to my father, website itself was a gift to him from me. I also made an admin/archive server that holds all the files and can be connected from both our PCs. Website started as an all-rounded tool for my previous employer, but it wasn't finished. It was also rewritten from scratch once with the current design .
+        <span className='projectShow__secondColor'>tl;dr </span> Szafran Projekt is a small company that belongs to my father, website itself was a gift from me. I also made an admin/archive server that holds all the files and can be connected from both our PCs. Website started as an all-rounded tool for my previous employer, but it wasn't finished. It was also rewritten from scratch once with the current design .
       </p>
 
       <div className='projectShow__picturesGrid'>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}} src={szafranprojekt2} alt='' />
+          <img onClick={(e) => {showInModal(szafranprojekt2)}} src={szafranprojekt2} alt='' />
           <p className='projectShow__picturesGrid_p'>Current Landing page </p>
         </div>
         <div className='projectShow__picturesGrid_element'>

@@ -207,7 +207,7 @@ const Resume = () => {
                 </div>
                 <div className='resume__aboutMe'>
                   <p className='resume__category'> About Me </p>
-                  <p className='resume__categoryText'>After graduating high school, I've spent most of my time helping my father with his work and eventually learning 'the craft and the tools'. Now I'd like to embark on a new journey - which is Web Development.</p>
+                  <p className='resume__categoryText'>After graduating high school, I've spent most of my time helping my father with his work and eventually learning 'the craft and tools'. Now I'd like to try expanding into a new field - which is Web Development.</p>
                   <p className='resume__category'> Links </p>
                   <div className='resume__categoryFlexGroup'>
                     <a href='' className='resume__mediaLink'>

@@ -272,24 +272,3 @@ const LightPage = () => {
 }
 
 export default LightPage
-
-     // //// PRELOAD IMAGES
-    // useEffect(() => {
-    //   const loadImage = (imageName, imageUrl) => {
-    //     return new Promise((resolve, reject) => {
-    //       const loadImg = new Image();
-    //       loadImg.src = imageUrl;
-    //       loadImg.onload = () => {
-    //         console.log('LOADED IMG', imageUrl)
-    //         IMAGES_PRELOADED[imageName] = imageUrl;
-    //         confirmLoading();
-    //         resolve(imageUrl)
-    //       }
-    //       loadImg.onerror = err => reject(err);
-    //     })
-    //   }
-  
-    //   Promise.all(Object.entries(IMAGES).map(image => {console.log('entries', image); loadImage(image[0],image[1])}))
-    //     .then((eh) => console.log(eh,'OWARI'))
-    //     .catch(err => console.log('Failed to load something', err))
-    // },[])

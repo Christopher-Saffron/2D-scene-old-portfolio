@@ -93,7 +93,7 @@ const Skills = () => {
 
               </div>
               <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/js.png' alt='' />
+                <img className='gridBox_smallImage' src='./icons/nextjsLogo.png' alt='' />
                 <span className='gridBox_span'>Next.JS</span>
 
               </div>
@@ -128,7 +128,7 @@ const Skills = () => {
             <div className='bigPage__holder_mainText_readMore'>
               <p className='bigPage__holder_mainText_readMoreOpening'  onClick={(e) => {e.stopPropagation(); console.log(e.target.parentElement.classList.toggle('bigPage__holder_mainText_readMore_open'))}}>Read </p>
               <div className='bigPage__holder_mainText_moreTab '>
-                <div className='bigPage__holder_mainText_moreTab_inside'>My first contact with Javascript happened in 2019 where I had undergone a <a  target="_blank" rel="noopener noreferrer" href='https://www.udemy.com/course/the-complete-web-development-bootcamp/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email'>course at Udemy.com by Dr. Angela Yu.</a> Then I began practicing on <a  target="_blank" rel="noopener noreferrer" href='https://www.freecodecamp.org/'>freecodecamp</a> and <a  target="_blank" rel="noopener noreferrer" href='https://www.theodinproject.com/'>The Odin Project</a>. "Dyplomas" can be viewed in the History tab. </div>
+                <div className='bigPage__holder_mainText_moreTab_inside'>My first contact with Javascript happened in 2019 where I had undergone a <a  target="_blank" rel="noopener noreferrer" href='https://www.udemy.com/course/the-complete-web-development-bootcamp/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email'>course at Udemy.com by Dr. Angela Yu.</a> Then I began practicing on <a  target="_blank" rel="noopener noreferrer" href='https://www.freecodecamp.org/'>freecodecamp</a> and <a  target="_blank" rel="noopener noreferrer" href='https://www.theodinproject.com/'>The Odin Project</a>. </div>
                 <p className='bigPage__holder_mainText_readMoreOpening'  onClick={(e) => {e.stopPropagation(); console.log(e.target.parentElement.parentElement.classList.toggle('bigPage__holder_mainText_readMore_open'))}}>Read </p>
               </div>
               
