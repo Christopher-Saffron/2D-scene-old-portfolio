@@ -635,6 +635,28 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .fastPreview__tab {
+    .fastPreview__tab_scroll {
+      .fastPreview__tab_scrollContainer {
+        position: relative;
+      }
+      .fastPreview__tab_return {
+        // position: absolute !important;
+        // bottom: 0;
+        // left: 0;
+        // width: 100%;
+        position: relative;
+        margin-bottom: 65px;
+        height:15%;
+        font-size: 2rem;
+        // background: #393939;
+      }
+    }
+  }
+  
+}
+
 .fastPreview__tab_hide {
   animation: fadeOut .6s ease-in-out,
 }
