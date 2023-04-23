@@ -638,11 +638,36 @@
 /// /// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 969px) {
     .bigPage__holder {
-        .bigPage__holder_options {
+        overflow:hidden;
+        width: 100%;
+        height:100%;
+        .bigPage__holder_article {
+            position: relative;
+            .bigPage__holder_exitButton_holder {
+                bottom: 0;
+                position: fixed;
+                padding: 15px 0 !important;
+            }
+        }
+        .bigPage__scrollHandle {
             display: none;
         }
+        .bigPage__holder_options {
+            right: 5%;
+            top: 1%;
+            font-size: .6rem;
+            flex-direction: row;
+            .bigPage__holder_makeItBiggerButton {
+                display:none;
+            }
+        }
+    }
+ }
+
+@media only screen and (max-width: 800px) {
+    .bigPage__holder {
         .bigPage__holder_article {
             margin-top: 60px !important;
             .bigPage__holder_title {
@@ -697,7 +722,6 @@
                 }
             }
             .bigPage__holder_exitButton_holder {
-                padding: 5px 0 0 !important;
                 .bigPage__holder_exitButton {
                     img {
                         margin: 0 20px;
