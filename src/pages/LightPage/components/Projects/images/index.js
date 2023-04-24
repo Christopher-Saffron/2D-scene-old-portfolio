@@ -56,37 +56,67 @@ import servicesVideo from './videos/servicesVideo.mov'
 
 ////// webdev
 
-import szafranprojekt2 from './webdev/szafranprojekt2.jpg'
-import szafranprojekt3 from './webdev/szafranprojekt3.jpg'
-import szafranprojekt5 from './webdev/szafranprojekt5.jpg'
-import szafranprojekt6 from './webdev/szafranprojekt6.jpg'
-import szafranprojekt7 from './webdev/szafranprojekt7.jpg'
-import szafranprojekt8 from './webdev/szafranprojekt8.jpg'
-import szafranprojektDevVIDEO from './webdev/szafranprojektDevVIDEO.mp4'
+// import szafranprojekt2 from './webdev/szafranprojekt2.jpg'
+// import szafranprojekt3 from './webdev/szafranprojekt3.jpg'
+// import szafranprojekt5 from './webdev/szafranprojekt5.jpg'
+// import szafranprojekt6 from './webdev/szafranprojekt6.jpg'
+// import szafranprojekt7 from './webdev/szafranprojekt7.jpg'
+// import szafranprojekt8 from './webdev/szafranprojekt8.jpg'
+// import szafranprojektDevVIDEO from './webdev/szafranprojektDevVIDEO.mp4'
 
 
-import portfoliochoose2 from './webdev/portfoliochoose2.jpg'
+// import portfoliochoose2 from './webdev/portfoliochoose2.jpg'
 
 
-import portfolioheavy1 from './webdev/portfolioheavy1.jpg'
-import portfolioheavy2 from './webdev/portfolioheavy2.jpg'
-import portfolioheavy3 from './webdev/portfolioheavy3.jpg'
-import portfolioheavy4 from './webdev/portfolioheavy4.jpg'
-import portfolioheavy5 from './webdev/portfolioheavy5.jpg'
-import portfolioheavy6 from './webdev/portfolioheavy6.jpg'
-import portfolioheavy7 from './webdev/portfolioheavy7.jpg'
-import portfolioheavy8 from './webdev/portfolioheavy8.jpg'
-import portfolioheavy9 from './webdev/portfolioheavy9.jpg'
-import portfolioheavy10 from './webdev/portfolioheavy10.jpg'
-import portfolioheavy11 from './webdev/portfolioheavy11.jpg'
-import portfolioheavy12 from './webdev/portfolioheavy12.jpg'
-import portfolioheavy13 from './webdev/portfolioheavy13.jpg'
-import portfolioheavy14 from './webdev/portfolioheavy14.jpg'
+// import portfolioheavy1 from './webdev/portfolioheavy1.jpg'
+// import portfolioheavy2 from './webdev/portfolioheavy2.jpg'
+// import portfolioheavy3 from './webdev/portfolioheavy3.jpg'
+// import portfolioheavy4 from './webdev/portfolioheavy4.jpg'
+// import portfolioheavy5 from './webdev/portfolioheavy5.jpg'
+// import portfolioheavy6 from './webdev/portfolioheavy6.jpg'
+// import portfolioheavy7 from './webdev/portfolioheavy7.jpg'
+// import portfolioheavy8 from './webdev/portfolioheavy8.jpg'
+// import portfolioheavy9 from './webdev/portfolioheavy9.jpg'
+// import portfolioheavy10 from './webdev/portfolioheavy10.jpg'
+// import portfolioheavy11 from './webdev/portfolioheavy11.jpg'
+// import portfolioheavy12 from './webdev/portfolioheavy12.jpg'
+// import portfolioheavy13 from './webdev/portfolioheavy13.jpg'
+// import portfolioheavy14 from './webdev/portfolioheavy14.jpg'
 
 
-import portfoliolight1 from './webdev/portfoliolight1.jpg'
-import portfoliolight2 from './webdev/portfoliolight2.jpg'
-import portfoliolight3 from './webdev/portfoliolight3.jpg'
+// import portfoliolight1 from './webdev/portfoliolight1.jpg'
+// import portfoliolight2 from './webdev/portfoliolight2.jpg'
+// import portfoliolight3 from './webdev/portfoliolight3.jpg'
+
+// import insta from './webdev/insta.jpg'
+
+// import amazon from './webdev/amazon.jpg'
+
+// import mementomori from './webdev/mementomori.jpg'
+
+// import hulu from './webdev/hulu.jpg'
+
+// import facebook from './webdev/facebook.jpg'
+
+// import messagingapp from './webdev/messagingapp.jpg'
+
+// import szafranprojektnextjs from './webdev/szafranprojektnextjs.jpg'
+
+// import airbnb from './webdev/airbnb.jpg'
+
+// import simpleServer from './webdev/simpleserver.jpg'
+
+// import oldserver from './webdev/oldserver.jpg'
+
+// import jplearn from './webdev/jplearn.jpg'
+
+// import battleships from './webdev/battleships.jpg'
+
+// import tictactoe from './webdev/tictactoe.jpg'
+
+// import restaurant from './webdev/restaurant.jpg'
+
+// import pomodoro from './webdev/pomodoro.jpg'
 
 
 
@@ -239,34 +269,64 @@ export {
 
     ///WEBDEV
 
-    szafranprojekt2,
-    szafranprojekt3,
-    szafranprojekt5,
-    szafranprojekt6,
-    szafranprojekt7,
-    szafranprojekt8,
-    szafranprojektDevVIDEO,
+    // szafranprojekt2,
+    // szafranprojekt3,
+    // szafranprojekt5,
+    // szafranprojekt6,
+    // szafranprojekt7,
+    // szafranprojekt8,
+    // szafranprojektDevVIDEO,
 
-    portfoliochoose2,
+    // portfoliochoose2,
     
-    portfoliolight1,
-    portfoliolight2,
-    portfoliolight3,
+    // portfoliolight1,
+    // portfoliolight2,
+    // portfoliolight3,
 
-    portfolioheavy1,
-    portfolioheavy2,
-    portfolioheavy3,
-    portfolioheavy4,
-    portfolioheavy5,
-    portfolioheavy6,
-    portfolioheavy7,
-    portfolioheavy8,
-    portfolioheavy9,
-    portfolioheavy10,
-    portfolioheavy11,
-    portfolioheavy12,
-    portfolioheavy13,
-    portfolioheavy14,
+    // portfolioheavy1,
+    // portfolioheavy2,
+    // portfolioheavy3,
+    // portfolioheavy4,
+    // portfolioheavy5,
+    // portfolioheavy6,
+    // portfolioheavy7,
+    // portfolioheavy8,
+    // portfolioheavy9,
+    // portfolioheavy10,
+    // portfolioheavy11,
+    // portfolioheavy12,
+    // portfolioheavy13,
+    // portfolioheavy14,
+
+    // insta,
+
+    // amazon,
+
+    // mementomori,
+
+    // hulu,
+
+    // facebook,
+
+    // messagingapp,
+
+    // szafranprojektnextjs,
+
+    // airbnb,
+
+    // simpleServer,
+
+    // oldserver,
+
+    // jplearn,
+
+    // battleships,
+
+    // tictactoe,
+
+    // restaurant,
+
+    // pomodoro,
 
 
 

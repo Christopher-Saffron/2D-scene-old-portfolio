@@ -58,6 +58,16 @@ const ProjectLaptop = ({IMAGES, showInModal}) => {
   }
 
 
+  const goBack = () => {
+    ///IF WE'RE VIEWING A PROJECT GO BACK TO CATEGORY,
+    if (currentProject !== 'none') {
+      setCurrentProject('none')
+    } else {
+      //IF WE'RE VIEWING CATEGORY, GO BACK FULL
+      setCurrentCategory('none');
+    }
+  }
+
   return (
     <div className={`projects__LaptopTab ${hideLaptop ? 'projects__LaptopTab_hide' : ''}`}>
         <img src={IMAGES.laptopTransparent} className='projects__LaptopFrame_img' alt='' />
@@ -145,6 +155,9 @@ const ProjectLaptop = ({IMAGES, showInModal}) => {
             )}
             <div className='leaveLaptop' onClick={() => {toggleHideLaptop(true)}}>
               X
+            </div>
+            <div className='leaveLaptop leaveLaptopArrow' onClick={() => {goBack()}}>
+              {'←'}
             </div>
           </div>
 

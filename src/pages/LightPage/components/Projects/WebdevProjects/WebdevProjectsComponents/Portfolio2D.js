@@ -1,5 +1,5 @@
 import React from 'react'
-import { szafranprojekt6, szafranprojekt3, szafranprojekt2, szafranprojekt5, szafranprojekt7, szafranprojekt8, szafranprojektDevVIDEO, portfoliolight1, portfoliolight2, portfoliolight3 } from '../../images'
+// import { szafranprojekt6, szafranprojekt3, szafranprojekt2, szafranprojekt5, szafranprojekt7, szafranprojekt8, szafranprojektDevVIDEO, portfoliolight1, portfoliolight2, portfoliolight3 } from '../../images'
 
 const Portfolio2D = ({showInModal}) => {
   return (
@@ -14,7 +14,7 @@ const Portfolio2D = ({showInModal}) => {
           <p><span className='projectShow__secondColor'>Github:</span> <a className='projectShow__link' target="_blank" rel="noopener noreferrer" href=''>www.github/havir/szaf.com</a></p>
         </div>
         <div className='projectShow__flexBox_img'>
-          <img src={portfoliolight2} alt='' />
+          <img src={'portfoliolight2.jpg'} alt='' />
         </div>
       </div>
       <p className='projectShow__paragraph'>
@@ -22,15 +22,15 @@ const Portfolio2D = ({showInModal}) => {
       </p>
       <div className='projectShow__picturesGrid'>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}} src={portfoliolight2} alt='' />
+          <img onClick={(e) => {showInModal(e.target.src)}} src={'portfoliolight2.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>Starting look</p>
         </div>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}} src={portfoliolight1} alt='' />
+          <img onClick={(e) => {showInModal(e.target.src)}} src={'portfoliolight1.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>How it looked in blender 1</p>
         </div>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}} src={portfoliolight3} alt='' />
+          <img onClick={(e) => {showInModal(e.target.src)}} src={'portfoliolight3.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>How it looked in blender 2</p>
         </div>
       </div>

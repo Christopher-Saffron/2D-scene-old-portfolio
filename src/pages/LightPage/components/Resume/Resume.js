@@ -1,5 +1,8 @@
 import React from 'react'
 import './styles.scss'
+import Software from './Software'
+import Languages from './Languages'
+import ProgrammingSkills from './ProgrammingSkills'
 
 const Resume = () => {
 
@@ -38,139 +41,9 @@ const Resume = () => {
                 </div>
               </div>
               <div className='resume__skills'>
-                <div className='resume__programming'>
-                  <div className='resume__category'>
-                    <img className='resume__category_icon' src='./code.svg' alt='' />
-                    Programming skills
-                  </div>
-                  <div className='resume__skillBars_Holder'>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>HTML</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '96%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>CSS</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '88%'}}  />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>JavaScript</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '85%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>ThreeJS</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '50%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>NodeJS</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '65%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>PHP</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '35%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>MongoDB</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '51%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>MySQL</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '41%'}} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='resume__software'>
-                  <div className='resume__category'>
-                    <img className='resume__category_icon' src='./skills.svg' alt='' />
-                    Software
-                  </div>
-                  <div className='resume__skillBars_Holder'>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Blender</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '76%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Sony Vegas</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '69%'}}  />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Davinci Resolve</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '25%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Gimp</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '50%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Excel</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '20%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Unity &#40;vrchatSDK&#41;</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '65%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Googling</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '100%'}} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='resume__languages'>
-                  <div className='resume__category'>
-                    <img className='resume__category_icon' src='./languages.svg' alt='' />
-                    Languages
-                  </div>
-                  <div className='resume__skillBars_Holder'>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>English</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '91%'}} />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Polish</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '90%'}}  />
-                      </div>
-                    </div>
-                    <div className='resume__skill'>
-                      <span className='resume__skillName'>Japanese</span>
-                      <div className='resume__skillBar'>
-                        <div className='resume__skillBar_inside' style={{width: '29%'}} />
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
+                <ProgrammingSkills />
+                <Software />
+                <Languages />
               </div>
               <div className='resume__contact'>
                 <div className='resume__category'>

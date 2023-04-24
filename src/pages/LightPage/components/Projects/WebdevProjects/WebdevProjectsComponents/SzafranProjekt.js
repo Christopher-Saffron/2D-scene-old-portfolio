@@ -1,5 +1,5 @@
 import React from 'react'
-import { szafranprojekt6, szafranprojekt3, szafranprojekt2, szafranprojekt5, szafranprojekt7, szafranprojekt8, szafranprojektDevVIDEO } from '../../images'
+// import { szafranprojekt6, szafranprojekt3, szafranprojekt2, szafranprojekt5, szafranprojekt7, szafranprojekt8, szafranprojektDevVIDEO } from '../../images'
 
 const SzafranProjekt = ({showInModal}) => {
   return (
@@ -11,11 +11,11 @@ const SzafranProjekt = ({showInModal}) => {
           <p><span className='projectShow__secondColor'>Tools used:</span> React, GIMP, GSAP, Sass, bootstrap-icons, swiper, moment, Axios, react-file-base64, recharts, MUI, Mongoose, React-Leaflet ...</p>
           <p><span className='projectShow__secondColor'>Websites in total:</span> 2</p>
           <p><span className='projectShow__secondColor'>Backends:</span> 1</p>
-          <p><span className='projectShow__secondColor'>Live Link:</span> <a className='projectShow__link' target="_blank" rel="noopener noreferrer" href=''>www.szafranprojekt.pl</a></p>
-          <p><span className='projectShow__secondColor'>Github:</span> <a className='projectShow__link' target="_blank" rel="noopener noreferrer" href=''>www.github/havir/szaf.com</a></p>
+          <p><span className='projectShow__secondColor'>Live Link:</span> <a className='projectShow__link' target="_blank" rel="noopener noreferrer" href='https://szafranprojekt.vercel.app/'>https://szafranprojekt.vercel.app/</a></p>
+          <p><span className='projectShow__secondColor'>Github:</span> <a className='projectShow__link' target="_blank" rel="noopener noreferrer" href='https://github.com/Havir-S/szafranprojekt'>https://github.com/Havir-S/szafranprojekt</a></p>
         </div>
         <div className='projectShow__flexBox_img'>
-          <img src={szafranprojekt2} alt='' />
+          <img src={'szafranprojekt2.jpg'} alt='' />
         </div>
         
       </div>
@@ -25,20 +25,20 @@ const SzafranProjekt = ({showInModal}) => {
 
       <div className='projectShow__picturesGrid'>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(szafranprojekt2)}} src={szafranprojekt2} alt='' />
+          <img onClick={(e) => {showInModal('szafranprojekt2.jpg')}} src={'szafranprojekt2.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>Current Landing page </p>
         </div>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}}  src={szafranprojekt3} alt='' />
+          <img onClick={(e) => {showInModal(e.target.src)}}  src={'szafranprojekt3.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>First design Landing page </p>
         </div>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}}  src={szafranprojekt6} alt='' />
+          <img onClick={(e) => {showInModal(e.target.src)}}  src={'szafranprojekt6.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>Main page as my last employer's TO-BE server. </p>
         </div>
       </div>
 
-      <video className='projectShow__videoPlayer' src={szafranprojektDevVIDEO} muted controls />
+      <video className='projectShow__videoPlayer' src={'szafranprojektDevVIDEO.mp4'} muted controls />
       <p style={{textAlign: 'center', fontSize: '1.5rem', margin: '10px auto'}}>Quick use of the server website to archive all projects.</p>
 
       <p className='projectShow__paragraph'>
@@ -50,11 +50,11 @@ const SzafranProjekt = ({showInModal}) => {
 
       <div className='projectShow__picturesGrid'>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}}  src={szafranprojekt7} alt='' />
+          <img onClick={(e) => {showInModal(e.target.src)}}  src={'szafranprojekt7.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>Amount of files during the design phase </p>
         </div>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}}  src={szafranprojekt8} alt='' />
+          <img onClick={(e) => {showInModal(e.target.src)}}  src={'szafranprojekt8.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>Server website is using MUI </p>
         </div>
       </div>
@@ -65,7 +65,7 @@ const SzafranProjekt = ({showInModal}) => {
 
       <div className='projectShow__picturesGrid'>
         <div className='projectShow__picturesGrid_element'>
-          <img onClick={(e) => {showInModal(e.target.src)}}  src={szafranprojekt6} alt='' />
+          <img onClick={(e) => {showInModal(e.target.src)}}  src={'szafranprojekt6.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>Main page as the last employer's TO-BE server. </p>
         </div>
       </div>

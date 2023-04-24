@@ -1,7 +1,7 @@
 import React  from 'react'
 
 
-import { SzafranProjekt, Portfolio2D, Portfolio3D, PortfolioChoose} from './WebdevProjects/WebdevProjectsComponents'
+import { SzafranProjekt, SzafranProjektNextJs, Portfolio2D, Portfolio3D, PortfolioChoose} from './WebdevProjects/WebdevProjectsComponents'
 import { ShrineForPortfolio, JapaneseRender, MysteryForest, Castle, Ramiris, Ichigo, Rimuru, Mirio, Hayasaka, Shinon, PortfolioLight, Garfield, BodySculpting, UnusualShapes, JapaneseLamps, Keyboard} from './ModelProjects/ModelProjectsComponents'
 import { GamingEditing, LoopedVideos, SimpleEditing, TiktokVideos, WebsiteVideos} from './VideoProjects/VideoProjectsComponents'
 import { MapPreparation, MapStocktaking, TemporaryRoadDesign } from './BricscadProjects/BricscadProjectsComponents'
@@ -12,6 +12,9 @@ const ProjectLookForComponent = ({showInModal, projectName}) => {
   switch (projectName) {
     case 'SZAFRAN PROJEKT':
       return <SzafranProjekt showInModal={showInModal} />
+    break;
+    case 'SZAFRAN PROJEKT migration to NEXTJS':
+      return <SzafranProjektNextJs showInModal={showInModal} />
     break;
     case 'Portfolio 2D':
       return <Portfolio2D showInModal={showInModal} />

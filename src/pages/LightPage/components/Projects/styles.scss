@@ -141,7 +141,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 30px;
-            grid-row-gap: 60px;
+            grid-row-gap: 100px;
             justify-items: center;
             align-items: stretch;
             margin: 0 15px;
@@ -173,8 +173,8 @@
 
                     .projects__mainContent_gridElement_icon {
                         background: white;
-                        width: 64px;
-                        height: 64px;
+                        width: 42px;
+                        height: 42px;
                         border-radius: 20px;
                         border: 2px solid black;
                         box-shadow: 0 0 5px rgb(0, 255, 234);
@@ -190,6 +190,7 @@
                         width: 100%;
                         height: 250px;
                         object-fit: cover;
+                        display: block;
                     }
                 }
 
@@ -257,13 +258,14 @@
             // left: 50%;
             // transform: translate(-50%, 0);
             width: 100%;
+            user-select: none;
             // border: 1px solid red;
 
             border-bottom: 1px solid rgb(0, 255, 234);
             position: sticky;
             display: block;
             background: #141414;
-            top: 0;
+            top: -1px;
             font-size: 1.5rem;
             display: none;
 
@@ -284,6 +286,7 @@
                 border-radius: 3px;
                 cursor: pointer;
                 width: 32px;
+                height: 32px;
                 font-size: 1.2rem;
                 text-align: center;
                 right: 15px;
@@ -296,6 +299,11 @@
                     color: rgb(190, 51, 51);
                     border: 3px solid rgb(190, 51, 51);
                 }
+            }
+            .leaveLaptopArrow {
+                right: 55px;
+                line-height: 23px;
+
             }
             
             

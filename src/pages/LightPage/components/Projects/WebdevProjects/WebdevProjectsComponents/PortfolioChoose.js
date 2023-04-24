@@ -1,5 +1,5 @@
 import React from 'react'
-import { szafranprojekt6, szafranprojekt3, szafranprojekt2, szafranprojekt5, szafranprojekt7, szafranprojekt8, szafranprojektDevVIDEO, portfoliolight1, portfoliolight2, portfoliolight3, portfoliochoose2 } from '../../images'
+// import { szafranprojekt6, szafranprojekt3, szafranprojekt2, szafranprojekt5, szafranprojekt7, szafranprojekt8, szafranprojektDevVIDEO, portfoliolight1, portfoliolight2, portfoliolight3, portfoliochoose2 } from '../../images'
 
 const PortfolioChoose = () => {
   return (
@@ -14,7 +14,7 @@ const PortfolioChoose = () => {
           <p><span className='projectShow__secondColor'>Github:</span> <a className='projectShow__link' target="_blank" rel="noopener noreferrer" href=''>www.github/havir/szaf.com</a></p>
         </div>
         <div className='projectShow__flexBox_img'>
-          <img src={portfoliochoose2} alt='' />
+          <img src={'portfoliochoose2.jpg'} alt='' />
         </div>
         
       </div>
