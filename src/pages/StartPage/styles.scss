@@ -49,6 +49,7 @@
   border: 2px solid rgba(255,255,255,.05);
   transition: all .3s ease-in-out;
   background-color: transparent;
+  animation: navbarDivAnim .6s ease-in-out forwards, fadeIn .6s ease-in-out;
   &:hover {
     color: #fff;
     opacity: 1;

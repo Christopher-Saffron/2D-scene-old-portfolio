@@ -16,11 +16,11 @@ const PROJECTLIST = [
 
     },
     {
-        img: 'preview-blog.jpg',
+        img: 'blog.jpg',
         name: 'My Blog',
         description: "See what I'm currently working on",
         link: 'https://bloghavir.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/bloghavir/tree/main'
+        linkGithub: 'https://github.com/Havir-S/blog-restored'
     },
     {
         img: 'szafranprojekt2.jpg',
