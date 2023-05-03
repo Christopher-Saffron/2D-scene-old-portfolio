@@ -33,106 +33,106 @@ const PROJECTLIST = [
         img: 'szafranprojektnextjs.jpg',
         name: 'Szafran Projekt - nextjs + tailwind',
         description: 'Landing Page for an official business',
-        link: 'https://szafranprojekt.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/szafranprojekt/tree/main'
+        link: 'https://szafranprojekt-nextjs.vercel.app/',
+        linkGithub: 'https://github.com/Havir-S/szafranprojekt-nextjs'
     },
     {
         img: 'facebook.jpg',
         name: 'Facebook',
         description: 'Replicating the Facebook feed',
-        link: 'https://fb-clone-xi-six.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/fb-clone/tree/main'
+        link: 'https://havir-facebook.vercel.app/',
+        linkGithub: 'https://github.com/Havir-S/fb-clone'
     },
     {
         img: 'preview-socialmedia2.jpg',
         name: 'Instagram',
         description: 'Instagram feed',
         link: 'https://instagram-v2-phi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/instagram-v2/tree/main'
+        linkGithub: 'https://github.com/Havir-S/instagram-v2'
     },
-    {
-        img: 'preview-chatapp.jpg',
-        name: 'Chat app',
-        description: 'Similiar to the Messenger App',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
-    },
+    // {
+    //     img: 'preview-chatapp.jpg',
+    //     name: 'Chat app',
+    //     description: 'Similiar to the Messenger App',
+    //     link: 'https://chatapp-six-pi.vercel.app/',
+    //     linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+    // },
     {
         img: 'amazon.jpg',
         name: 'Amazon',
         description: 'Amazon with built in STRIPE payment method',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://amazon-havir.vercel.app/',
+        linkGithub: 'https://github.com/Havir-S/amazon-havir'
     },
     {
         img: 'airbnb.jpg',
         name: 'Airbnb',
         description: 'Airbnb with working maps',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://havirbnb.vercel.app/',
+        linkGithub: 'https://github.com/Havir-S/havirbnb'
     },
     {
         img: 'hulu.jpg',
         name: 'Hulu',
         description: 'Hulu - using IMDB API',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://hulu-v2-two.vercel.app/',
+        linkGithub: 'https://github.com/Havir-S/havirbnb/tree/main'
     },
     {
         img: 'mementomori.jpg',
         name: 'Memento Mori',
         description: 'Shows remaining time of the year in months, days and hours',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://mementomori-mocha.vercel.app/',
+        linkGithub: 'https://github.com/Havir-S/mementomori'
     },
     {
         img: 'simpleserver.jpg',
         name: 'File archive',
         description: 'Using mongoose for file storing on local network',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        // link: 'https://chatapp-six-pi.vercel.app/',
+        linkGithub: 'https://github.com/Havir-S/szafranprojekt-nextjs-project-browser'
     },
     {
         img: 'oldserver.jpg',
         name: 'Old file archive',
         description: 'Using mongoose + MUI for storing files on local network',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://github.com/Havir-S/szafranprojekt-dev-client-template',
+        linkGithub: 'https://github.com/Havir-S/szafranprojekt-dev-server'
     },
     {
         img: 'tictactoe.jpg',
         name: '[2019] TIC-TAC-TOE',
         description: 'Old tic-tac-toe game',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://havir-s.github.io/tic-tac-toe/',
+        linkGithub: 'https://github.com/Havir-S/tic-tac-toe'
     },
     {
         img: 'battleships.jpg',
         name: '[2019] Battleships',
         description: 'Battleships game',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://havir-s.github.io/battleships-deployed/',
+        linkGithub: 'https://github.com/Havir-S/battleships-deployed'
     },
     {
         img: 'restaurant.jpg',
         name: '[2019] Restaurant website',
         description: 'Trying blender for website props',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://havir-s.github.io/restaurant-page-react/',
+        linkGithub: 'https://github.com/Havir-S/restaurant-page-react'
     },
     {
         img: 'pomodoro.jpg',
         name: '[2019] Pomodoro website',
         description: 'For \'efficient\' learning',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://havir-s.github.io/pomodoro-havir/',
+        linkGithub: 'https://github.com/Havir-S/pomodoro-havir'
     },
     {
         img: 'jplearn.jpg',
         name: '[2019] Japanese learning website',
         description: 'Duolingo style word rehearsing',
-        link: 'https://chatapp-six-pi.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
+        link: 'https://havir-s.github.io/jap_learn/',
+        linkGithub: 'https://github.com/Havir-S/jap_learn'
     },
     
     // {

@@ -1,7 +1,7 @@
 import React  from 'react'
 
 
-import { SzafranProjekt, SzafranProjektNextJs, Portfolio2D, Portfolio3D, PortfolioChoose} from './WebdevProjects/WebdevProjectsComponents'
+import { SzafranProjekt, SzafranProjektNextJs, Instagram, Amazon, Portfolio2D, Portfolio3D, PortfolioChoose, Airbnb, Hulu, Facebook, Blog, MementoMori, SimpleServer, OldServer, TicTacToe, Battleships, Restaurant, Pomodoro, JpLearning} from './WebdevProjects/WebdevProjectsComponents'
 import { ShrineForPortfolio, JapaneseRender, MysteryForest, Castle, Ramiris, Ichigo, Rimuru, Mirio, Hayasaka, Shinon, PortfolioLight, Garfield, BodySculpting, UnusualShapes, JapaneseLamps, Keyboard} from './ModelProjects/ModelProjectsComponents'
 import { GamingEditing, LoopedVideos, SimpleEditing, TiktokVideos, WebsiteVideos} from './VideoProjects/VideoProjectsComponents'
 import { MapPreparation, MapStocktaking, TemporaryRoadDesign } from './BricscadProjects/BricscadProjectsComponents'
@@ -15,6 +15,48 @@ const ProjectLookForComponent = ({showInModal, projectName}) => {
     break;
     case 'SZAFRAN PROJEKT migration to NEXTJS':
       return <SzafranProjektNextJs showInModal={showInModal} />
+    break;
+    case 'Instagram':
+      return <Instagram showInModal={showInModal} />
+    break;
+    case 'Amazon':
+      return <Amazon showInModal={showInModal} />
+    break;
+    case 'Airbnb':
+      return <Airbnb showInModal={showInModal} />
+    break;
+    case 'Hulu':
+      return <Hulu showInModal={showInModal} />
+    break;
+    case 'Facebook':
+      return <Facebook showInModal={showInModal} />
+    break;
+    case 'Blog':
+      return <Blog showInModal={showInModal} />
+    break;
+    case 'Memento Mori':
+      return <MementoMori showInModal={showInModal} />
+    break;
+    case 'File archive for bricscad projects':
+      return <SimpleServer showInModal={showInModal} />
+    break;
+    case 'File archive for bricscad projects - older version; client + server':
+      return <OldServer showInModal={showInModal} />
+    break;
+    case '[2019] TIC-TAC-TOE with a (fake) chat':
+      return <TicTacToe showInModal={showInModal} />
+    break;
+    case '[2019] Classic Battleship game':
+      return <Battleships showInModal={showInModal} />
+    break;
+    case '[2019] Restaurant website':
+      return <Restaurant showInModal={showInModal} />
+    break;
+    case '[2019] Pomodoro website':
+      return <Pomodoro showInModal={showInModal} />
+    break;
+    case '[2019] Japanese learning website':
+      return <JpLearning showInModal={showInModal} />
     break;
     case 'Portfolio 2D':
       return <Portfolio2D showInModal={showInModal} />

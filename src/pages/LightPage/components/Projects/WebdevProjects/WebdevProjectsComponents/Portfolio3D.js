@@ -23,7 +23,6 @@ const Portfolio3D = ({showInModal}) => {
       </p>
 
       <div className='projectShow__picturesGrid'>
-        
         <div className='projectShow__picturesGrid_element'>
           <img onClick={(e) => {showInModal(e.target.src)}} src={'portfolioheavy2.jpg'} alt='' />
           <p className='projectShow__picturesGrid_p'>First frame</p>

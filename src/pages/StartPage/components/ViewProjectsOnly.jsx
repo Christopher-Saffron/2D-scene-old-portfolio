@@ -19,8 +19,8 @@ const ViewProjectsOnly = ({toggleQuickPreview}) => {
             <div className='fastPreview__tab_info'>
               <p className='fastPreview__tab_displayMain_itemName'>{visibleProject.name}</p>
               <p className='fastPreview__tab_displayMain_itemDescription'>{visibleProject.description}</p>
-              <p className='fastPreview__tab_displayMain_itemLink'>Live Link: <a target="_blank" rel="noopener noreferrer" href='https://portfolio3d-two.vercel.app/'>{visibleProject.link}</a></p>
-              <p className='fastPreview__tab_displayMain_itemLink'>Github Repo: <a target="_blank" rel="noopener noreferrer" href='https://portfolio3d-two.vercel.app/'>{visibleProject.linkGithub}</a></p>
+              <p className='fastPreview__tab_displayMain_itemLink'>Live Link: <a target="_blank" rel="noopener noreferrer" href={visibleProject?.link}>{visibleProject?.link}</a></p>
+              <p className='fastPreview__tab_displayMain_itemLink'>Github Repo: <a target="_blank" rel="noopener noreferrer" href={visibleProject?.linkGithub}>{visibleProject?.linkGithub}</a></p>
             </div>
           </div>
           )}
@@ -35,8 +35,8 @@ const ViewProjectsOnly = ({toggleQuickPreview}) => {
               <img className='fastPreview__tab_itemImg' src={`./${project.img}`} alt='' />
               <p className='fastPreview__tab_itemName'>{project.name}</p>
               <p className='fastPreview__tab_itemDescription'>{project.description}</p>
-              <a target="_blank" rel="noopener noreferrer" href='https://portfolio3d-two.vercel.app/' className='fastPreview__tab_itemName'>{project.link}</a>
-              <a target="_blank" rel="noopener noreferrer" href='https://portfolio3d-two.vercel.app/' className='fastPreview__tab_itemDescription'>{project.linkGithub}</a>
+              <a target="_blank" rel="noopener noreferrer" href={project?.link} className='fastPreview__tab_itemName'>{project?.link}</a>
+              <a target="_blank" rel="noopener noreferrer" href={project?.linkGithub} className='fastPreview__tab_itemDescription'>{project?.linkGithub}</a>
             </div>
           ))}
          

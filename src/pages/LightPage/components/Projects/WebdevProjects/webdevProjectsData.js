@@ -1,7 +1,6 @@
 // import { portfoliochoose2, portfolioheavy2, portfoliolight2, szafranprojekt2, insta, amazon, mementomori, hulu, facebook, messagingapp, szafranprojektnextjs, airbnb, simpleServer, oldserver, jplearn, battleships, tictactoe, restaurant, pomodoro  } from '../images'
 
 //COMPONENTS
-import SzafranProjekt from './WebdevProjectsComponents/SzafranProjekt'
 
 export const webdevProjectsData = [
     {
@@ -10,7 +9,6 @@ export const webdevProjectsData = [
       description: 'Official website for a road project company',
       images: ['/icons/react.png', '/icons/sass.svg', '/icons/gsap.png',  '/icons/mui.png', '/icons/node.png', '/icons/mongodb.jpg', '/icons/gimp.jpg'],
       tags: ['official', 'landingPage', 'frontEnd', 'backEnd', 'diskManagement', 'gsap', 'mui', 'sass', 'maps', 'react-leaflet', 'server', 'logo', 'design', 'imageEdit', 'video', 'animation',],
-      component: <SzafranProjekt />
     },
     {
       imgSrc: 'szafranprojektnextjs.jpg',
@@ -18,7 +16,6 @@ export const webdevProjectsData = [
       description: 'Official website for a road project company - NEXTJS + TAILWIND',
       images: ['/icons/react.png', '/icons/nextjsLogo.png', '/icons/tailwind.png','/icons/gimp.jpg'],
       tags: ['official', 'landingPage',  'frontEnd', 'logo', 'nextjs', 'tailwind', 'design', 'imageEdit',],
-      component: <SzafranProjekt />
     },
     {
       imgSrc: 'portfolioheavy2.jpg',
@@ -62,25 +59,25 @@ export const webdevProjectsData = [
       images: ['/icons/react.png', '/icons/nextjsLogo.png', '/icons/nextauth.png', '/icons/firebase.jpg', '/icons/tailwind.png',],
       tags: ['frontEnd', 'backEnd', 'nextjs', 'next-auth', 'firebase', 'tailwind', 'responsive']
     },
+    // {
+    //   imgSrc: 'messagingapp.jpg',
+    //   projectName: 'Messaging App',
+    //   description: 'Utilizing firebase\'s onSnapshot listen functionality in order to create a live-updating messenger.',
+    //   images: ['/icons/react.png', '/icons/nextjsLogo.png', '/icons/mui.png', '/icons/firebase.jpg', ],
+    //   tags: ['frontEnd', 'backEnd', 'nextjs',  'firebase', 'mui', 'responsive']
+    // },
     {
-      imgSrc: 'messagingapp.jpg',
-      projectName: 'Messaging App',
-      description: 'Utilizing firebase\'s onSnapshot listen functionality in order to create a live-updating messenger.',
-      images: ['/icons/react.png', '/icons/nextjsLogo.png', '/icons/mui.png', '/icons/firebase.jpg', ],
-      tags: ['frontEnd', 'backEnd', 'nextjs',  'firebase', 'mui', 'responsive']
-    },
-    {
-      imgSrc: '',
+      imgSrc: 'blog.jpg',
       projectName: 'Blog',
       description: 'Using sanity as a database for my posts. It shows what I\'m currently working on',
-      images: ['/icons/react.png', '/icons/nextjsLogo.png',  '/icons/tailwind.png', ],
-      tags: ['frontEnd', 'backEnd', 'nextjs',  'firebase', 'mui', 'responsive']
+      images: ['/icons/react.png', '/icons/nextjsLogo.png', '/icons/typescript.png', '/icons/tailwind.png', ],
+      tags: ['frontEnd', 'backEnd', 'nextjs', 'tailwind', 'sanity', 'responsive']
     },
     {
       imgSrc: 'mementomori.jpg',
       projectName: 'Memento Mori',
       description: 'Shows the remaining time of the year in months, days and hours and minutes',
-      images: ['/icons/react.png', '/icons/nextjsLogo.png', '/icons/typescript.png',  '/icons/tailwind.png', ],
+      images: ['/icons/react.png', '/icons/nextjsLogo.png', '/icons/tailwind.png', ],
       tags: ['frontEnd', 'tailwind', 'nextjs',  'responsive']
     },
     {
@@ -106,14 +103,14 @@ export const webdevProjectsData = [
     },
     {
       imgSrc: 'battleships.jpg',
-      projectName: '[2019] Classic Battleship game ',
+      projectName: '[2019] Classic Battleship game',
       description: 'First time using blender for a website',
       images: ['/icons/js.png', '/icons/blender.jpg',  ],
       tags: ['frontEnd', 'blender', 'github-pages', 'vanilla', 'first websites']
     },
     {
       imgSrc: 'restaurant.jpg',
-      projectName: '[2019] Restaurant website ',
+      projectName: '[2019] Restaurant website',
       description: 'Using blender for website\'s props',
       images: ['/icons/js.png', '/icons/blender.jpg',  ],
       tags: ['frontEnd', 'blender', 'github-pages', 'vanilla', 'first websites']
