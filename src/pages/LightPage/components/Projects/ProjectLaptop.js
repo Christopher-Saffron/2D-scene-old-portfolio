@@ -182,19 +182,8 @@ const ProjectLaptop = ({IMAGES, showInModal}) => {
           {/* CATEGORY PROJECTS VIEWER */}
           {/* was there */}
           {currentProject === 'none' && <CategoryViewer showInModal={showInModal} currentCategory={currentCategory} setCurrentProject={setCurrentProject} />}
-
-          
-          {/* {currentCategory === 'webdev' ? <WebdevProjects setCurrentProject={setCurrentProject} /> : currentCategory === 'model' ? <ModelProjects setCurrentProject={setCurrentProject} /> : ''} */}
-          
-          {/* PROJECT SHOW */}
-
           {/* /// WAS THERE */}
           <AllProjectsList showInModal={showInModal} projectName={currentProject} />
-          
-          
-          {/* <br />
-          <br /><br /><br /><br />adaaa<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />a */}
-          
           
         </div>
         

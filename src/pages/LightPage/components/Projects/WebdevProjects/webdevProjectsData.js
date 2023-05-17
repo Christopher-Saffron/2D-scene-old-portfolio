@@ -81,7 +81,7 @@ export const webdevProjectsData = [
       tags: ['frontEnd', 'tailwind', 'nextjs',  'responsive']
     },
     {
-      imgSrc: 'simpleServer.jpg',
+      imgSrc: 'simpleserver.jpg',
       projectName: 'File archive for bricscad projects',
       description: 'Allows PCs to share/store/archive FILES (on Local Connection) ',
       images: ['/icons/react.png', '/icons/nextjsLogo.png', '/icons/node.png', '/icons/mongodb.jpg',  '/icons/tailwind.png', ],

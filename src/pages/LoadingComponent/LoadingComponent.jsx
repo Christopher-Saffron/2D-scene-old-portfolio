@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import './styles.scss'
 
 const LoadingComplete = new Audio('LoadingComplete.mp3')
