@@ -326,7 +326,8 @@
   border: 10px solid $mainColor1;
   right: 100%;
   border-width: 25px 25px 0 0;
-  border-radius:  10% 30px 0 0 ;
+  // border-radius:  50% 50% 50% 0 ;
+  border-image: linear-gradient(to right, rgba(0,0,0,0), $mainColor1) 1;
 }
 
 // ========= BOTTOM EXTENSION
@@ -347,7 +348,7 @@
   border: 10px solid $mainColor1;
   right: 100%;
   border-width: 0 25px 25px 0;
-  border-radius: 0 0 30px 10% ;
+  border-image: linear-gradient(to right, rgba(0,0,0,0), $mainColor1) 1;
 }
 
 // ========= ANCHOR TEXT

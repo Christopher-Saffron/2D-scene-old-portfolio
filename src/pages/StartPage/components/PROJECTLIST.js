@@ -67,7 +67,7 @@ const PROJECTLIST = [
     {
         img: 'airbnb.jpg',
         name: 'Airbnb',
-        description: 'Airbnb with working maps',
+        description: 'Airbnb with 3d models, dates, reservation, mongoose database, google auth login, maps',
         link: 'https://havirbnb.vercel.app/',
         linkGithub: 'https://github.com/Havir-S/havirbnb'
     },
