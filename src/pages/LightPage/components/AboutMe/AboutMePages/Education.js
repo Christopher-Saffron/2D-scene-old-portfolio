@@ -31,7 +31,7 @@ const Education = ({showInModal}) => {
         </p>
 
         <p className='bigPage__holder_smallInfo'>
-         In 2019 I have attended University in Poland called <a  target="_blank" rel="noopener noreferrer" href='https://www.agh.edu.pl/'>AGH University of Science and Technology</a>. Trying to major in Computer Science, however I have decided to drop out as it didn't like the execution of some things.
+         In 2019 I have attended University in Poland called <a  target="_blank" rel="noopener noreferrer" href='https://www.agh.edu.pl/'>AGH University of Science and Technology</a>. Trying to major in Metallurgical Engineering, however I have decided to drop out as it didn't like the execution of some things.
         </p>
 
         <p className='bigPage__holder_smallInfo'>

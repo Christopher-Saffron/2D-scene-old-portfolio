@@ -66,7 +66,7 @@ const History = ({showInModal}) => {
               <div className='bigPage__holder_timeline_horizontalPath' />
               <div className='bigPage__holder_timeline_horizontalPathLong' />
               <div className='bigPage__holder_timeline_text' >
-                Started helping my dad in his work and eventually learned road designing in BricsCAD
+                Started helping my dad in his work and eventually learned traffic management designing in BricsCAD
               </div>
             </div>
             
@@ -85,7 +85,7 @@ const History = ({showInModal}) => {
               <div className='bigPage__holder_timeline_horizontalPath' />
               <div className='bigPage__holder_timeline_horizontalPathLong' />
               <div className='bigPage__holder_timeline_text' >
-                Began studying for Computer Science major at <a target="_blank" rel="noopener noreferrer" href='https://www.agh.edu.pl/'>AGH University of Science and Technology</a>
+                Began studying for Metallurgical Engineering major at <a target="_blank" rel="noopener noreferrer" href='https://www.agh.edu.pl/'>AGH University of Science and Technology</a>
               </div>
             </div>
 
@@ -216,7 +216,7 @@ const History = ({showInModal}) => {
               <div className='bigPage__holder_timeline_horizontalPath' />
               <div className='bigPage__holder_timeline_horizontalPathLong' />
               <div className='bigPage__holder_timeline_text' >
-                Due to labour shortage I had also started working in the office, managing videos of roads - these videos would be sold to potential road designers.
+                Due to labour shortage I had also started working in the office, managing videos of roads - these videos would be sold to potential traffic management designers.
               </div>
             </div>
 

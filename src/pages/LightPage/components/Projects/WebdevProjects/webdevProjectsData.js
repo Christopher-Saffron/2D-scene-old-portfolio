@@ -71,7 +71,7 @@ export const webdevProjectsData = [
     {
       imgSrc: 'szafranprojekt2.jpg',
       projectName: 'SZAFRAN PROJEKT',
-      description: 'Official website for a road project company',
+      description: 'Official website for a traffic management designing company',
       images: ['/icons/react.png', '/icons/sass.svg', '/icons/gsap.png',  '/icons/mui.png', '/icons/node.png', '/icons/mongodb.jpg', '/icons/gimp.jpg'],
       tags: ['official', 'landingPage', 'frontEnd', 'backEnd', 'diskManagement', 'gsap', 'mui', 'sass', 'maps', 'react-leaflet', 'server', 'logo', 'design', 'imageEdit', 'video', 'animation',],
     },
