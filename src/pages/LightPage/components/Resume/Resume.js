@@ -73,7 +73,7 @@ const Resume = () => {
             
             <div className='resume__box_pillarRight' >
                 <div className='resume__FaceImgBox'>
-                    <img src='' alt='' className='resume__FaceImg' />
+                    <img src='./11.jpg' alt='' className='resume__FaceImg' />
                     <p className='resume__name'>Krzysztof Szafran</p>
                     <p className='resume__description'>Temporary Traffic Management Designing</p>
                     <p className='resume__description'>Web Development</p>

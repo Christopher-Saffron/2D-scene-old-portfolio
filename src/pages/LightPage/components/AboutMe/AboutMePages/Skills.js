@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
-// I've been tinkering with blender since kindergarten, but it wasn't anything given that i couldn't understand english which resulted in some terrible effectiveness issues, like - restarting the whole program to return to the stage i was before, not knowing that EDIT MODE and OBJECT MODE are two different stages.
-// The only thing I made that was somewhat worthy was my room which i measured IRL and tried to reproduce 1:1 with textures, I have no pictures nor screenshots of that as I wasn't collecting PROOF for my future portfolio. + I  didnt feel like that was something huge.
+
+import { SKILLS_CATEGORIES, WEBDEV_SKILL_ICONS } from './skillsDATA';
+
 const Skills = () => {
   const mainDiv = useRef(null);
 
@@ -27,16 +28,7 @@ const Skills = () => {
            
             <div className='bigPage__holder_mainText_middleFlexBox'>      
              <div className='bigPage__holder_quickAccess'>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('webdev')}}>Web Development</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('model')}}>3D Modeling</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('bricscad')}}>BricsCAD</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('video')}}>Video editing</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('image')}}>Image editing</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('sound')}}>Sound editing</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('corel')}}>CorelDraw</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('unity')}}>Unity</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('excel')}}>Microsoft Excel</span>
-              <span className='bigPage__holder_chip' onClick={() => {scrollToElement('other')}}>Other</span>
+              {SKILLS_CATEGORIES.map((category,i) => <span key={category[0]} className='bigPage__holder_chip' onClick={() => {scrollToElement(category[0])}}>{category[1]}</span>)}
              </div>
             </div>
             
@@ -52,77 +44,12 @@ const Skills = () => {
               I like to know all aspects of things, so I tend to experiment with <span className='bigPage__holder_mainText_important'>frontend</span>, <span className='bigPage__holder_mainText_important'>backend</span> and <span className='bigPage__holder_mainText_important'>design</span>.  <br /> I have projects involving all of these.  <br /> Many of them may also include libraries/tools/packages such as <span className='bigPage__holder_mainText_important'>GSAP</span>, <span className='bigPage__holder_mainText_important'>react-spring</span>, <span className='bigPage__holder_mainText_important'>MUI</span>, <span className='bigPage__holder_mainText_important'>BootStrap</span>, <span className='bigPage__holder_mainText_important'>tailwind</span>, <span className='bigPage__holder_mainText_important'>web-socket</span>, <span className='bigPage__holder_mainText_important'>three.js</span> and many more. 
             </p>
             <div className='bigPage__holder_mainText_middleGridBox'>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/js.png' alt='' />
-                <span className='gridBox_span'>JAVASCRIPT</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/mongodb.jpg' alt='' />
-                <span className='gridBox_span'>MONGOOSE</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/mysql.png' alt='' />
-                <span className='gridBox_span'>MYSQL</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/react.png' alt='' />
-                <span className='gridBox_span'>REACT</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/node.png' alt='' />
-                <span className='gridBox_span'>Node</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/gsap.png' alt='' />
-                <span className='gridBox_span'>GSAP</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/reacctspring.png' alt='' />
-                <span className='gridBox_span'>React Spring</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/reactredux.png' alt='' />
-                <span className='gridBox_span'>React Redux</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/nextjsLogo.png' alt='' />
-                <span className='gridBox_span'>Next.JS</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/firebase.jpg' alt='' />
-                <span className='gridBox_span'>Firebase</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/bootstrap.png' alt='' />
-                <span className='gridBox_span'>Bootstrap</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/tailwind.png' alt='' />
-                <span className='gridBox_span'>Tailwind</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/threejs.png' alt='' />
-                <span className='gridBox_span'>ThreeJS</span>
-
-              </div>
-              <div className='gridBox'>
-                <img className='gridBox_smallImage' src='./icons/sass.svg' alt='' />
-                <span className='gridBox_span'>SASS</span>
-
-              </div>
-              
+              {WEBDEV_SKILL_ICONS.map(icon => (
+                <div className='gridBox' key={icon}>
+                  <img className='gridBox_smallImage' src={icon} alt='' />
+                  <span className='gridBox_span'>JAVASCRIPT</span>
+                </div>
+              ))}
             </div>
 
             <div className='bigPage__holder_mainText_readMore'>
@@ -193,7 +120,7 @@ const Skills = () => {
               <p className='bigPage__holder_mainText_readMoreOpening'  onClick={(e) => {e.stopPropagation(); console.log(e.target.parentElement.classList.toggle('bigPage__holder_mainText_readMore_open'))}}>Read </p>
               <div className='bigPage__holder_mainText_moreTab '>
                 <div className='bigPage__holder_mainText_moreTab_inside'>
-                  I have been preparing maps and driving through offices, and designing solutions for smaller projects for my dad for years now. Becoming a 'road' designer was essentially guaranteed, but this work really doesn't appeal to me as much as coding. And thus, I'm on my way to change it.
+                  I have been preparing maps, driving through offices, and designing solutions for smaller projects for my dad for years now. Becoming a temporary traffic management designer was essentially guaranteed, but this work really doesn't appeal to me as much as coding. And thus, I'm on my way to change it.
                 </div>
                 <p className='bigPage__holder_mainText_readMoreOpening'  onClick={(e) => {e.stopPropagation(); console.log(e.target.parentElement.parentElement.classList.toggle('bigPage__holder_mainText_readMore_open'))}}>Read </p>
               </div>
