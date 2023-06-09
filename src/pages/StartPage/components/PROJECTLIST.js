@@ -4,7 +4,7 @@ const PROJECTLIST = [
         name: 'Portfolio - 3D Version',
         description: '',
         link: 'https://portfolio3d-two.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/portfolio3d/tree/main'
+        linkGithub: 'https://github.com/Havir-S/portfolio3d'
 
     },
     {
@@ -12,7 +12,7 @@ const PROJECTLIST = [
         name: 'Portfolio - 2D Version',
         description: '',
         link: 'https://portfolio2d.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/portfolio2d/tree/main'
+        linkGithub: 'https://github.com/Havir-S/portfolio2d'
 
     },
     {
@@ -23,11 +23,18 @@ const PROJECTLIST = [
         linkGithub: 'https://github.com/Havir-S/blog-restored'
     },
     {
+        img: 'airbnb.jpg',
+        name: 'Airbnb',
+        description: 'Airbnb with 3d models, dates, reservation, mongoose database, google auth login, maps',
+        link: 'https://havirbnb.vercel.app/',
+        linkGithub: 'https://github.com/Havir-S/havirbnb'
+    },
+    {
         img: 'szafranprojekt2.jpg',
         name: 'Szafran Projekt',
         description: 'Landing Page for an official business',
         link: 'https://szafranprojekt.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/szafranprojekt/tree/main'
+        linkGithub: 'https://github.com/Havir-S/szafranprojekt'
     },
     {
         img: 'szafranprojektnextjs.jpg',
@@ -65,18 +72,11 @@ const PROJECTLIST = [
         linkGithub: 'https://github.com/Havir-S/amazon-havir'
     },
     {
-        img: 'airbnb.jpg',
-        name: 'Airbnb',
-        description: 'Airbnb with 3d models, dates, reservation, mongoose database, google auth login, maps',
-        link: 'https://havirbnb.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/havirbnb'
-    },
-    {
         img: 'hulu.jpg',
         name: 'Hulu',
         description: 'Hulu - using IMDB API',
         link: 'https://hulu-v2-two.vercel.app/',
-        linkGithub: 'https://github.com/Havir-S/havirbnb/tree/main'
+        linkGithub: 'https://github.com/Havir-S/hulu-v2'
     },
     {
         img: 'mementomori.jpg',
