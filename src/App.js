@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import './App.scss';
-import StartPage from './pages/StartPage/StartPage';
-import LightPage from './pages/LightPage/LightPage';
+import { useState } from "react";
+import "./App.scss";
+import StartPage from "./pages/StartPage/StartPage";
+import LightPage from "./pages/LightPage/LightPage";
 
 const WebpageMode = {
-  START: 'start',
-  LIGHT: 'light',
+  START: "start",
+  LIGHT: "light",
 };
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
   const handleClick = (newWebpage) => {
     setTimeout(() => {
       setWebpageMode(newWebpage);
-    }, 1000)
+    }, 1000);
   };
 
   return (
@@ -24,7 +24,7 @@ const App = () => {
       ) : webpageMode === WebpageMode.LIGHT ? (
         <LightPage />
       ) : (
-        'Error Page'
+        "Error Page"
       )}
     </>
   );
