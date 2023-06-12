@@ -491,6 +491,9 @@
 
 @media only screen and (max-width: 500px) {
     .projects__LaptopTab  {
+        .projects__version {
+            display: none;
+        }
         .projects__mainContent {
             .projects__mainContent_grid {
                 grid-template-columns: repeat(1, 1fr);
