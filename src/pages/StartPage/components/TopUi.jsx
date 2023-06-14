@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const TopUi = ({toggleQuickPreview}) => {
+const TopUi = ({ toggleQuickPreview }) => {
   return (
-    <button onClick={() => {toggleQuickPreview(true)}} className='StartComponent__TopUi'>
-        SHOW ONLY THE PROJECTS
+    <button
+      onClick={() => {
+        toggleQuickPreview(true);
+      }}
+      className="StartComponent__TopUi"
+    >
+      SHOW ONLY THE PROJECTS
     </button>
-  )
-}
+  );
+};
 
-export default TopUi
+export default TopUi;

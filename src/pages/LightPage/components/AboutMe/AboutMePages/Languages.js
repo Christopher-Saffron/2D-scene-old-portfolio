@@ -1,10 +1,5 @@
 import React from "react";
 
-// <Scroll title={'Languages'} kanji={'言語'} />
-// <Scroll title={'Skills'}  kanji={'能力'} />
-// <Scroll title={'Education'}  kanji={'教育'} />
-// <Scroll title={'History'}  kanji={'職歴'} />
-
 const Languages = () => {
   return (
     <>

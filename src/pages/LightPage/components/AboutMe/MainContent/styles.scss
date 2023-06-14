@@ -198,12 +198,6 @@
       transform: translate(-50%, -50%);
       display: grid;
       padding: 3%;
-      // .scroll__holder:nth-child(even) {
-      //   align-self: flex-end;
-      // }
-      // .scroll__holder:nth-child(odd) {
-      //   align-self: flex-start;
-      // }
       .scroll__handle_bottom {
         display: none;
       }
@@ -234,21 +228,6 @@
           height: 220px;
         }
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .mainContent__holder {
-    .mainContent__scrollBox {
-      // display: flex;
-
-      // .scroll__holder:nth-child(even) {
-      //   align-self: flex-start;
-      // }
-      // .scroll__holder:nth-child(odd) {
-      //   align-self: flex-end;
-      // }
     }
   }
 }

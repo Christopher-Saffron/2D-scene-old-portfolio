@@ -2,7 +2,6 @@ import React, { useState, useLayoutEffect, useEffect } from "react";
 import Particle from "./components/Particle.jsx";
 import Ui from "./components/UI.jsx";
 import Footer from "./components/Footer.jsx";
-import TopUi from "./components/TopUi.jsx";
 
 import "./styles.scss";
 import ViewProjectsOnly from "./components/ViewProjectsOnly.jsx";

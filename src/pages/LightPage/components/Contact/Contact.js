@@ -1,11 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.scss";
-
-import wave1 from "./images/wave1.jpg";
-import wave2 from "./images/wave2.jpg";
-import wave3 from "./images/wave3.jpg";
-import wave4 from "./images/wave4.jpg";
-
 const Contact = ({ IMAGES }) => {
   return (
     <div className="contact__holder">

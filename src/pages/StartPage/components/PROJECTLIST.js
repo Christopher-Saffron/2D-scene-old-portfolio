@@ -3,7 +3,7 @@ const PROJECTLIST = [
     img: "preview-3dportfolio.jpg",
     name: "Portfolio - 3D Version",
     description: "",
-    link: "https://portfolio3d-two.vercel.app/",
+    link: "https://christophersaffron-3d.vercel.app/",
     linkGithub: "https://github.com/Havir-S/portfolio3d",
   },
   {
@@ -56,13 +56,6 @@ const PROJECTLIST = [
     link: "https://instagram-v2-phi.vercel.app/",
     linkGithub: "https://github.com/Havir-S/instagram-v2",
   },
-  // {
-  //     img: 'preview-chatapp.jpg',
-  //     name: 'Chat app',
-  //     description: 'Similiar to the Messenger App',
-  //     link: 'https://chatapp-six-pi.vercel.app/',
-  //     linkGithub: 'https://github.com/Havir-S/chatapp/tree/main'
-  // },
   {
     img: "amazon.jpg",
     name: "Amazon",
@@ -134,21 +127,6 @@ const PROJECTLIST = [
     link: "https://havir-s.github.io/jap_learn/",
     linkGithub: "https://github.com/Havir-S/jap_learn",
   },
-
-  // {
-  //     img: 'preview-szafranprojektserver.jpg',
-  //     name: 'Szafran Projekt - server',
-  //     description: 'Locally running server to keep track of all projects. No live version.',
-  //     link: '',
-  //     linkGithub: 'https://github.com/Havir-S/szafranprojekt-dev-server'
-  // },
-  // {
-  //     img: 'preview-szafranprojektserverclient.jpg',
-  //     name: 'Szafran Projekt - server client',
-  //     description: 'Client interface to interact with the server. No live version.',
-  //     link: '',
-  //     linkGithub: 'https://github.com/Havir-S/szafranprojekt-dev-client-template'
-  // },
 ];
 
 export { PROJECTLIST };

@@ -1,12 +1,5 @@
 //STAGE
-import door from './DOOR.png'
-import inside from './LIGHTPAGE-INSIDE.png'
+import door from "./DOOR.png";
+import inside from "./LIGHTPAGE-INSIDE.png";
 
-
-export {
-
-
-    door,
-    inside,
-
-}
+export { door, inside };
