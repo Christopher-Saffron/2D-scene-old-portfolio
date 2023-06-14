@@ -1,137 +1,120 @@
-
 .bigPage__holder_timeline_pillar_box {
+  width: 90%;
+  max-width: 800px;
+  height: fit-content;
+  min-height: 900px;
+  margin: 10px auto;
 
-    width:90%;
-    max-width: 800px;
-    height: fit-content;
-    min-height: 900px;
-    margin: 10px auto;
-    
-    position: relative;
-    .bigPage__holder_timeline_pillar {
-        position: absolute;
-        width: 30px;
-        
-        border-radius: 25px;
-        background: linear-gradient(0deg,  rgba(200, 0, 0, 0) 1%, rgba(200, 0, 0, 1) 8%,  rgba(200, 0, 0, 1) 92%, rgba(200, 0, 0, 0) 99%, );
-        height: 100%;
+  position: relative;
+  .bigPage__holder_timeline_pillar {
+    position: absolute;
+    width: 30px;
 
-    }
+    border-radius: 25px;
+    background: linear-gradient(
+      0deg,
+      rgba(200, 0, 0, 0) 1%,
+      rgba(200, 0, 0, 1) 8%,
+      rgba(200, 0, 0, 1) 92%,
+      rgba(200, 0, 0, 0) 99%
+    );
+    height: 100%;
+  }
 
-    .bigPage__holder_timeline_box {
+  .bigPage__holder_timeline_box {
+    margin: 75px 0;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-        margin: 75px 0;
-        margin-left: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        
-    }
+  .bigPage__holder_gallery {
+    width: 100%;
+    height: 200px;
 
-    .bigPage__holder_gallery {
-        
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    .bigPage__holder_galleryBox {
+      margin: 0 15px;
+      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .bigPage__holder_galleryImg {
         width: 100%;
-        height: 200px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-left: 35px;
-        .bigPage__holder_galleryBox {
-            margin: 0 15px;
-            box-shadow: 0 0 10px 3px rgba(0,0,0,.2);
-            cursor: pointer;
-            transition: all .2s ease-in-out;
-            &:hover {
-                transform: scale(1.05);
-                box-shadow: 0 0 3px 5px rgba(0,0,0,.2);
-            }
-
-            .bigPage__holder_galleryImg {
-                // display: flex;
-                width: 100%;
-                max-height: 90px;
-                
-                object-fit: cover;
-                
-            }
-            .bigPage__holder_galleryText {
-                font-family: Franklin Gothic, "Gill Sans", sans-serif;
-                font-size: 1.3rem;
-                padding: 5px 0;
-                background: #D4A5A5;
-                
-
-            }
-
-        }
-    }
-
-
-
-    .bigPage__holder_timeline_box:nth-of-type(3) {
-        position: relative;
-        margin-top: 100px;
-
-    }
-
-    .bigPage__holder_timeline_horizontalPath, .bigPage__holder_timeline_horizontalPathLong {
-        height: 20px;
-        width: 100px;
-        background: rgb(212, 165, 165);
-        border: 2px solid rgb(200, 0, 0);
-        border-left: 0;
-        border-right: 0;
-        // background: linear-gradient(90deg, rgb(200, 0, 0) 2%, rgb(212, 165, 165) 5%, rgb(212, 165, 165) 95%, rgb(200, 0, 0) 98%, );
-    }
-
-
-
-    .bigPage__holder_timeline_horizontalPathLong {
-        width: 200px;
-    }
-
-    .bigPage__holder_timeline_year, .bigPage__holder_timeline_text {
-        padding: 10px 15px;
-        font-family: NukuNuku, Franklin Gothic, "Gill Sans", sans-serif;
-        font-size: 2rem;
-        background: rgb(212, 165, 165);
-        border: 4px solid rgb(200, 0, 0);
-        border-radius: 15px;
-        box-shadow: 0 0 3px 5px rgba(0,0,0,.1);
-
-    }
-
-    .bigPage__holder_timeline_text {
-        min-width: 300px;
-        font-size: 1.5rem;
+        max-height: 90px;
+        object-fit: cover;
+      }
+      .bigPage__holder_galleryText {
         font-family: Franklin Gothic, "Gill Sans", sans-serif;
-        vertical-align:baseline;
-        max-width: 350px;
-        position: relative;
-
-        a {
-            display: block;
-        }
-
-        &::before {
-            content: url('./images/lamp1small.png');
-            position: absolute;
-            top: 100%;
-
-            right: 20%;
-            // transform: translate(-50%, 0);
-        }
-        &::after {
-            content: url('./images/lamp1small.png');
-            position: absolute;
-            top: 100%;
-            
-            left: 20%;
-            // transform: translate(-50%, 0);
-        }
+        font-size: 1.3rem;
+        padding: 5px 0;
+        background: #d4a5a5;
+      }
     }
-    
+  }
+
+  .bigPage__holder_timeline_box:nth-of-type(3) {
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .bigPage__holder_timeline_horizontalPath,
+  .bigPage__holder_timeline_horizontalPathLong {
+    height: 20px;
+    width: 100px;
+    background: rgb(212, 165, 165);
+    border: 2px solid rgb(200, 0, 0);
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .bigPage__holder_timeline_horizontalPathLong {
+    width: 200px;
+  }
+
+  .bigPage__holder_timeline_year,
+  .bigPage__holder_timeline_text {
+    padding: 10px 15px;
+    font-family: NukuNuku, Franklin Gothic, "Gill Sans", sans-serif;
+    font-size: 2rem;
+    background: rgb(212, 165, 165);
+    border: 4px solid rgb(200, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .bigPage__holder_timeline_text {
+    min-width: 300px;
+    font-size: 1.5rem;
+    font-family: Franklin Gothic, "Gill Sans", sans-serif;
+    vertical-align: baseline;
+    max-width: 350px;
+    position: relative;
+
+    a {
+      display: block;
+    }
+
+    &::before,
+    &::after {
+      content: url("./images/lamp1small.png");
+      position: absolute;
+      top: 100%;
+      right: 20%;
+    }
+    &::after {
+      right: auto;
+      left: 20%;
+    }
+  }
 }

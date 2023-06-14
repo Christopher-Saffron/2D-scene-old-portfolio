@@ -3,7 +3,7 @@ const PROJECTLIST = [
     img: "preview-3dportfolio.jpg",
     name: "Portfolio - 3D Version",
     description: "",
-    link: "https://christophersaffron-3d.vercel.app/",
+    link: "https://portfolio3d-two.vercel.app/",
     linkGithub: "https://github.com/Havir-S/portfolio3d",
   },
   {

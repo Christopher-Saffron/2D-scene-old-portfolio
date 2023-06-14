@@ -1,234 +1,225 @@
 .resume__holder {
-    cursor:default;
-   border-radius: 15px;
-   width: 100%;
-   height: 86%;
-   position: fixed;
-   // backdrop-filter: blur(5px);
-   // box-shadow: inset 0px 0px 49px 1px rgba(0, 0, 0, 1);
-   // background: rgba(255,255,255,1);
-   z-index: 5;
-   bottom: -100%;
-   left: 50%;
-   animation: resumeAppear 1s ease-in-out .2s forwards;
-   transform: translate(-50%, 0);
-   transition: all .2s ease-in-out;
-   font-family: Quantico, Franklin Gothic, "Gill Sans", sans-serif;
-   font-weight: bold;
+  cursor: default;
+  border-radius: 15px;
+  width: 100%;
+  height: 86%;
+  position: fixed;
+  z-index: 5;
+  bottom: -100%;
+  left: 50%;
+  animation: resumeAppear 1s ease-in-out 0.2s forwards;
+  transform: translate(-50%, 0);
+  transition: all 0.2s ease-in-out;
+  font-family: Quantico, Franklin Gothic, "Gill Sans", sans-serif;
+  font-weight: bold;
 
-   .resume__category {
-       color: rgb(3, 83, 136);
-       font-size: 2rem;
-   }
-   .contact {
-       margin-top: 10px;
-   }
-   .resume__category_icon {
-       width: 45px;
-       height: 45px;
-       vertical-align: text-bottom;
-       background-color:rgba(180,0,0,1);
-       padding: 5px;
-       margin-right: 5px;
-       border-radius: 50%;
-   }
-   .resume__categoryText {
-       margin: 0 15px;
-   }
-   
-   .resume__box {
-       border:3px solid black;
-       background-color: rgba(255,255,255,.3);
-       width: 80%;
-       height: 100%;
-       display: flex;
-       margin: auto;
-       overflow-y: auto;
-       .resume__box_pillarLeft {
-           width: 100%;
-           height: 100%;
-           .resume__careerEducation {
-               min-height: 300px;
-               display: flex;
-               .resume__category {
-                   margin: 15px;
-                   width: max-content;
-               }
-               .resume__career, .resume__education {
-                   text-align: left;
-                   width: 100%;
-                   height: 100%;
-                   .resume__education_div {
-                       margin-left: 30px;
-                       min-height: 100px;
-                       padding-left: 10px;
-                       position: relative;
-                       max-width: 500px;
-                       font-size: 1.4rem;
-                       &::after {
-                           content: '';
-                           position: absolute;
-                           width: 15px;
-                           height: 15px;
-                           left: -20px;
-                           top: 0;
-                           border: 3px solid rgb(3, 83, 136);
-                           border-radius: 50%;
-                           background-color: rgba(255,255,255,.8);
-                       }
-                       &::before {
-                           content: '';
-                           position: absolute;
-                           width: 5px;
-                           height: 110px;
-                           left: -12px;
-                           top: 0;
-                           background-color: rgb(3, 83, 136);
-                       }
-                       .resume__education_text {
-                       }
-                       .resume__education_grey {
-                           font-size: 1rem;
-                           color: rgb(130,130,130);
-                       }
-                   }
-               }
-           }
-           .resume__skills {
-               margin: 0 5px;
-               height: 370px;
-               display: flex;
-               .resume__category {
-                   margin-left: 15px;
-                   width: max-content;   
-               }
-               .resume__programming, .resume__software, .resume__languages {
-                   width: 100%;
-                   border-right: 1px groove rgb(3, 83, 136);
-                   height: 100%;
-               }
-               .resume__languages {
-                   border: 0;
-               }
-               .resume__skillBars_Holder {
-                   display:flex;
-                   gap: 5px;
-                   margin: 0 10px;
-                   text-align: left;
-                   flex-direction: column;
-                   .resume__skill {
-                       display: flex;
-                       flex-direction: row;
-                       align-items: center;
-                       height: 100%;
-                       .resume__skillName {
-                           width: 180px;
-                           font-size: 1.3rem;
-                       }
-                       .resume__skillBar {
-                           display: inline-block;
-                           border-radius: 15px;
-                           border: 3px solid rgb(2, 53, 87);
-                           width: 100%;
-                           height: 10px;
-                           .resume__skillBar_inside {
-                               border-radius: 15px;
-                               height: 100%;
-                               width: 0%;
-                               transition: all 2s ease-in-out;
-                               background-color: rgb(3, 83, 136);
-                           }
-                       }
-                   }
-               }
-           }
-       }
+  .resume__category {
+    color: rgb(3, 83, 136);
+    font-size: 2rem;
+  }
+  .contact {
+    margin-top: 10px;
+  }
+  .resume__category_icon {
+    width: 45px;
+    height: 45px;
+    vertical-align: text-bottom;
+    background-color: rgba(180, 0, 0, 1);
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  .resume__categoryText {
+    margin: 0 15px;
+  }
 
-       .resume__box_pillarRight {
-           max-width: 350px;
-           height: 100%;
-           background: rgba(255,255,255,.3);
-           .resume__FaceImgBox {
-               color: white;
-               border: 1px solid red;
-               height: 450px;
-               position: relative;
-               background-color: rgba(180,0,0,1);
-               clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
-               .resume__FaceImg {
-                   object-fit: contain;
-                   width: 250px;
-                   top: 20px;
-                   // left: 50%;
-                   // transform: translate(-50%,0);
-                   position: relative;
-                   height: 230px;
-                   
-               }
-               .resume__name {
-                   margin-top: 15px;
-                   font-size: 1.8rem;
-               }
-               .resume__description {
-                   font-size: 1rem;
-                   font-weight: 100;
-               }
-           }
-           
-           .resume__categoryFlexGroup {
-               
-               display: flex;
-               gap: 10px;
-               justify-content: center;
-               .resume__mediaLink {
+  .resume__box {
+    border: 3px solid black;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    overflow-y: auto;
+    .resume__box_pillarLeft {
+      width: 100%;
+      height: 100%;
+      .resume__careerEducation {
+        min-height: 300px;
+        display: flex;
+        .resume__category {
+          margin: 15px;
+          width: max-content;
+        }
+        .resume__career,
+        .resume__education {
+          text-align: left;
+          width: 100%;
+          height: 100%;
+          .resume__education_div {
+            margin-left: 30px;
+            min-height: 100px;
+            padding-left: 10px;
+            position: relative;
+            max-width: 500px;
+            font-size: 1.4rem;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              left: -20px;
+              top: 0;
+              border: 3px solid rgb(3, 83, 136);
+              border-radius: 50%;
+              background-color: rgba(255, 255, 255, 0.8);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 5px;
+              height: 110px;
+              left: -12px;
+              top: 0;
+              background-color: rgb(3, 83, 136);
+            }
+            .resume__education_grey {
+              font-size: 1rem;
+              color: rgb(130, 130, 130);
+            }
+          }
+        }
+      }
+      .resume__skills {
+        margin: 0 5px;
+        height: 370px;
+        display: flex;
+        .resume__category {
+          margin-left: 15px;
+          width: max-content;
+        }
+        .resume__programming,
+        .resume__software,
+        .resume__languages {
+          width: 100%;
+          border-right: 1px groove rgb(3, 83, 136);
+          height: 100%;
+        }
+        .resume__languages {
+          border: 0;
+        }
+        .resume__skillBars_Holder {
+          display: flex;
+          gap: 5px;
+          margin: 0 10px;
+          text-align: left;
+          flex-direction: column;
+          .resume__skill {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            .resume__skillName {
+              width: 180px;
+              font-size: 1.3rem;
+            }
+            .resume__skillBar {
+              display: inline-block;
+              border-radius: 15px;
+              border: 3px solid rgb(2, 53, 87);
+              width: 100%;
+              height: 10px;
+              .resume__skillBar_inside {
+                border-radius: 15px;
+                height: 100%;
+                width: 0%;
+                transition: all 2s ease-in-out;
+                background-color: rgb(3, 83, 136);
+              }
+            }
+          }
+        }
+      }
+    }
 
-               }
-               .resume__categoryFlexItem {
-                   width: 40px;
-                   padding: 5px;
-                   border-radius: 30%;
-                   background-color: rgba(180,0,0,1);
-                   transition: all .1s ease-in-out;
-                   &:hover {
-                       transform: scale(1.1);
-                   }
-               }
-           }
-           
-       }
-   }
-   .resume__contact {
-       margin-top: 10px;
-   }
-   .resume__contactGroup {
-       
-       display: flex;
-       justify-content: space-evenly;
-       .resume__contactIcon {
-           height: 40px;
-           width: 40px;
-           padding: 3px;
-           border-radius: 30%;
-           background-color: rgba(180,0,0,1);
-           
-           border-radius: 15px;
-       }
-   }
+    .resume__box_pillarRight {
+      max-width: 350px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      .resume__FaceImgBox {
+        color: white;
+        border: 1px solid red;
+        height: 450px;
+        position: relative;
+        background-color: rgba(180, 0, 0, 1);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+        .resume__FaceImg {
+          object-fit: contain;
+          width: 250px;
+          top: 20px;
+          position: relative;
+          height: 230px;
+        }
+        .resume__name {
+          margin-top: 15px;
+          font-size: 1.8rem;
+        }
+        .resume__description {
+          font-size: 1rem;
+          font-weight: 100;
+        }
+      }
+
+      .resume__categoryFlexGroup {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        .resume__mediaLink {
+        }
+        .resume__categoryFlexItem {
+          width: 40px;
+          padding: 5px;
+          border-radius: 30%;
+          background-color: rgba(180, 0, 0, 1);
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  .resume__contact {
+    margin-top: 10px;
+  }
+  .resume__contactGroup {
+    display: flex;
+    justify-content: space-evenly;
+    .resume__contactIcon {
+      height: 40px;
+      width: 40px;
+      padding: 3px;
+      border-radius: 30%;
+      background-color: rgba(180, 0, 0, 1);
+
+      border-radius: 15px;
+    }
+  }
 }
 
 @keyframes resumeAppear {
-   0% {
-       bottom: -100%;
-       backdrop-filter: blur(0px);
-       box-shadow: inset 0px 0px 49px 1px rgba(0, 0, 0, 0);
-       background: rgba(255,255,255,0);
-     }
-     100% {
-       bottom: 0%;
-       backdrop-filter: blur(5px);
-       box-shadow: inset 0px 0px 49px 1px rgba(0, 0, 0, 1);
-       background: rgba(255,255,255,.85);
-     }
+  0% {
+    bottom: -100%;
+    backdrop-filter: blur(0px);
+    box-shadow: inset 0px 0px 49px 1px rgba(0, 0, 0, 0);
+    background: rgba(255, 255, 255, 0);
+  }
+  100% {
+    bottom: 0%;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0px 0px 49px 1px rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 0.85);
+  }
 }
 
 /// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -238,13 +229,13 @@
 /// ROTATED APP
 
 .App-rotated {
-   .resume__holder {
-       .resume__box {
-           overflow-y: scroll;
-           height: 100%;
-           padding: 55px 0;
-       }
-   }
+  .resume__holder {
+    .resume__box {
+      overflow-y: scroll;
+      height: 100%;
+      padding: 55px 0;
+    }
+  }
 }
 
 /// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -252,90 +243,88 @@
 /// /// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// /// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES
-/// 
+///
 @media (orientation: portrait) {
-   .resume__holder {
-       
-       .resume__box {
-           overflow-y: scroll;
-           height: max-content;
-           height: 100%;
-           padding: 55px 0;
-           margin-bottom: 150px;
-           // border: 15px solid blue !important;
-           .resume__box_pillarLeft, .resume__box_pillarRight {
-               height: max-content;
-           }
-           // .resume__box_pillarRight {
-           //     border-left: 3px solid black;
-           //     height: 100%;
-           // }
-           .resume__contactGroup {
-               padding-bottom: 50px;
-               flex-wrap: wrap;
-           }
-           .resume__skills {
-               flex-wrap: wrap;
-               height: max-content !important;
-               gap: 30px;
-           }
-           .resume__programming, .resume__software, .resume__languages {
-               border-right: 0 !important;
-           }
-       }
-   }
+  .resume__holder {
+    .resume__box {
+      overflow-y: scroll;
+      height: max-content;
+      height: 100%;
+      padding: 55px 0;
+      margin-bottom: 150px;
+      .resume__box_pillarLeft,
+      .resume__box_pillarRight {
+        height: max-content;
+      }
+
+      .resume__contactGroup {
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+      }
+      .resume__skills {
+        flex-wrap: wrap;
+        height: max-content !important;
+        gap: 30px;
+      }
+      .resume__programming,
+      .resume__software,
+      .resume__languages {
+        border-right: 0 !important;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1660px) {
-   .resume__holder {
-       padding: 10px;
-       .resume__box {
-           width: 100%;
-           padding: 0 20px;
-           .resume__skillName {
-               font-size: 1.2rem !important;
-           }
-       }
-   }
+  .resume__holder {
+    padding: 10px;
+    .resume__box {
+      width: 100%;
+      padding: 0 20px;
+      .resume__skillName {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-   .resume__holder {
-       padding: 10px;
-       .resume__box {
-           width: 100%;
-           padding: 0 20px;
-           .resume__skillName {
-               font-size: 1.2rem !important;
-           }
-       }
-   }
+  .resume__holder {
+    padding: 10px;
+    .resume__box {
+      width: 100%;
+      padding: 0 20px;
+      .resume__skillName {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1150px) {
-   .resume__holder {
-       padding: 10px;
-       .resume__box {
-           width: 100%;
-           padding: 0 10px;
-           .resume__category {
-               font-size: 1.4rem;
-           }
-           .resume__FaceImg {
-               width: 230px !important;
-           }
-           .resume__education_text {
-               font-size: 1.2rem;
-           }
-           .resume__category_icon {
-               width: 30px;
-               height: 30px;
-               vertical-align: sub;
-               padding: 2px !important;
-           }
-           .resume__skillName {
-               font-size: 1.1rem !important;
-           }
-       }
-   }
+  .resume__holder {
+    padding: 10px;
+    .resume__box {
+      width: 100%;
+      padding: 0 10px;
+      .resume__category {
+        font-size: 1.4rem;
+      }
+      .resume__FaceImg {
+        width: 230px !important;
+      }
+      .resume__education_text {
+        font-size: 1.2rem;
+      }
+      .resume__category_icon {
+        width: 30px;
+        height: 30px;
+        vertical-align: sub;
+        padding: 2px !important;
+      }
+      .resume__skillName {
+        font-size: 1.1rem !important;
+      }
+    }
+  }
 }

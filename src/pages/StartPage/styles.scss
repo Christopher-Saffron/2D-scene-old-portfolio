@@ -1,7 +1,5 @@
-
 //////// ================================== COLORS
-@import '../../utilities/variables';
-
+@import "../../utilities/variables";
 
 //////// ================================== START COMPONENT
 
@@ -10,19 +8,15 @@
 
   .App_particleDiv {
     position: absolute;
-    width: 100% ;
+    width: 100%;
     height: 100%;
-    left: 50% ;
+    left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     #tsparticles {
       height: 100%;
-      canvas {
-       
-      }
     }
-  } 
-  
+  }
 }
 
 //////// ================================== TopUi
@@ -34,33 +28,34 @@
   font-weight: bold;
   font-size: 1.3rem;
   transform: translate(-50%, 0) scale(1);
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   z-index: 1;
   margin-bottom: 50px;
   color: #aaa;
-  opacity: .4;
+  opacity: 0.4;
   text-decoration: none;
   cursor: pointer !important;
-  font-family: NukuNuku, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: NukuNuku, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
   font-style: italic;
   border-radius: 10px;
   padding: 15px 10px;
-  box-shadow: 0 5px 3px 0px rgba(255,255,255,0);
-  border: 2px solid rgba(255,255,255,.05);
-  transition: all .3s ease-in-out;
+  box-shadow: 0 5px 3px 0px rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
   background-color: transparent;
-  animation: fadeInOpacity04 .6s ease-in-out;
+  animation: fadeInOpacity04 0.6s ease-in-out;
   &:hover {
     color: #fff;
     opacity: 1;
-    border: 2px solid rgba(255,255,255,1);
+    border: 2px solid rgba(255, 255, 255, 1);
     transform: translate(-50%, 0) scale(1.05);
-    box-shadow: 0 0px 8px 3px rgba(255,255,255,.1);
+    box-shadow: 0 0px 8px 3px rgba(255, 255, 255, 0.1);
   }
 }
 
 .fadeOut {
-  animation: fadeOut .3s ease-in-out forwards;
+  animation: fadeOut 0.3s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
@@ -77,31 +72,30 @@
 //////// ================================== FOOTER
 
 .StartPage__Footer {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%,0);
-    margin-bottom: 20px;
-    font-size: 1rem;
-    z-index: 1;
-    text-align: center;
-    font-style: italic;
-    color: #888;
-    user-select: none;
-    animation: elementSlowAppear 2s ease-in-out;
-    transition: all .3s ease-in-out;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 20px;
+  font-size: 1rem;
+  z-index: 1;
+  text-align: center;
+  font-style: italic;
+  color: #888;
+  user-select: none;
+  animation: elementSlowAppear 2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
-    p {
-      margin-top: 8px;
-    }
+  p {
+    margin-top: 8px;
+  }
 
-    .StartPage__Footer_additionalText {
-        animation: slowAppear .2s ease-in-out forwards;
-        font-size: 1.05rem;
-        margin-top: 0;
-        transition: all .3s ease-in-out;
-
-    }
+  .StartPage__Footer_additionalText {
+    animation: slowAppear 0.2s ease-in-out forwards;
+    font-size: 1.05rem;
+    margin-top: 0;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .StartPage__Footer_disappear {
@@ -115,16 +109,13 @@
   animation: elementSlowAppear 2s ease-in-out;
 }
 
-
 //////// ================================== MAIN UI
 
 .StartPage__UI_tab {
-
   width: 100%;
   height: 100vh;
   z-index: 1;
   position: relative;
-
 
   &.StartPage__UI_buttonLight:hover .StartPage__NewPageAnchors {
     opacity: 1;
@@ -142,133 +133,136 @@
     flex-direction: row;
     animation: elementSlowAppear 1s ease-in-out;
     justify-content: space-between;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     user-select: none;
-    
+
     .StartPage__UI_optionDiv {
-        text-align: center;
-        font-weight: bolder;
-        position: relative;
-        &::before {
-            content: "";
-            
-        }
-    }
-      a {
-        text-decoration: none;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      &::before {
+        content: "";
       }
-      button, a {
-          // display: block;
-          text-align: center;
-          width: 10em;
-          position: relative;
-          padding: 15px 0;
-          cursor: pointer;
-          outline: none;
-          background-color: transparent;
-          color: #fff;
-          letter-spacing: normal;
-          word-spacing: normal;
-          transition: 1s;
-          border-radius: 0.3em;
-          font-size: 35px;
-          font-family: 'Abel';
-        }
+    }
+    a {
+      text-decoration: none;
+    }
+    button,
+    a {
+      text-align: center;
+      width: 10em;
+      position: relative;
+      padding: 15px 0;
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+      color: #fff;
+      letter-spacing: normal;
+      word-spacing: normal;
+      transition: 1s;
+      border-radius: 0.3em;
+      font-size: 35px;
+      font-family: "Abel";
+    }
 
-        .StartPage__UI_spanSmall {
-          font-size: 1.8rem;
-        }
+    .StartPage__UI_spanSmall {
+      font-size: 1.8rem;
+    }
 
-        .StartPage__UI_hidden {
-          display: none;
-          border: 3px ridge rgba(220,190,220);
-          // border-width: 4px;
-          // border-style: ridge;
-          // border-image: linear-gradient(0deg, rgb(39, 226, 240), rgb(203, 103, 253)) 1;
-        }
+    .StartPage__UI_hidden {
+      display: none;
+      border: 3px ridge rgba(220, 190, 220);
+    }
 
-        
-        .StartPage__UI_buttonLight {
-          border: 3px ridge $mainColor1;
-        }
-        .StartPage__UI_buttonHeavy {
-          border: 3px ridge $mainColor2;
-        }
-        .StartPage__UI_buttonSimple {
-          border: 3px ridge $mainColor3;
-          position: relative;
-          top: 100px;
-        }
-        
-        button::after, a::after, .StartPage__UI_hidden::after {
-          content: "";
-          position: absolute;
-          top: -30px;
-          left: 3%;
-          width: 95%;
-          height: 30%;
-          background-color: $backgroundDarkColor;
-          transition: 0.5s;
-          transform-origin: center;
-          
-        }
-        
-        button::before, a::before, .StartPage__UI_hidden::before {
-          content: "";
-          transform-origin: center;
-          position: absolute;
-          top: 90%;
-          left: 3%;
-          width: 95%;
-          height: 30%;
-          background-color: $backgroundDarkColor;
-          transition: 0.5s;
-        }
-        
-        button:hover::before, button:hover::after, a:hover::before, a:hover::after, .StartPage__UI_hidden:hover::before, .StartPage__UI_hidden:hover::after {
-          transform: scale(0)
-        }
+    .StartPage__UI_buttonLight {
+      border: 3px ridge $mainColor1;
+    }
+    .StartPage__UI_buttonHeavy {
+      border: 3px ridge $mainColor2;
+    }
+    .StartPage__UI_buttonSimple {
+      border: 3px ridge $mainColor3;
+      position: relative;
+      top: 100px;
+    }
 
+    button::after,
+    a::after,
+    .StartPage__UI_hidden::after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 3%;
+      width: 95%;
+      height: 30%;
+      background-color: $backgroundDarkColor;
+      transition: 0.5s;
+      transform-origin: center;
+    }
 
-        .StartPage__UI_buttonHeavy:hover, .StartPage__UI_buttonSimple:hover, .StartPage__UI_buttonLight:hover, .StartPage__UI_hidden:hover {
-          transform: scale(1.05);
-        }
-        
-        .StartPage__UI_buttonHeavy:hover {
-          box-shadow: inset 0px 0px 25px $mainColor2;
-        }
+    button::before,
+    a::before,
+    .StartPage__UI_hidden::before {
+      content: "";
+      transform-origin: center;
+      position: absolute;
+      top: 90%;
+      left: 3%;
+      width: 95%;
+      height: 30%;
+      background-color: $backgroundDarkColor;
+      transition: 0.5s;
+    }
 
-        .StartPage__UI_buttonLight:hover {
-          box-shadow: inset 0px 0px 25px $mainColor1;
-        }
-        .StartPage__UI_buttonSimple:hover {
-          box-shadow: inset 0px 0px 25px $mainColor3;
-        }
-        .StartPage__UI_hidden:hover {
-          box-shadow: inset 0px 0px 25px rgba(220,190,220);
-        }
-        .StartPage__UI_spanLight, .StartPage__UI_spanHeavy{ 
-          font-weight: bold;
-          }
+    button:hover::before,
+    button:hover::after,
+    a:hover::before,
+    a:hover::after,
+    .StartPage__UI_hidden:hover::before,
+    .StartPage__UI_hidden:hover::after {
+      transform: scale(0);
+    }
 
-        .StartPage__UI_spanLight {
-          color: $mainColor1;
-          animation: spanLightText 2s ease-in-out;
-        }
+    .StartPage__UI_buttonHeavy:hover,
+    .StartPage__UI_buttonSimple:hover,
+    .StartPage__UI_buttonLight:hover,
+    .StartPage__UI_hidden:hover {
+      transform: scale(1.05);
+    }
 
-        .StartPage__UI_spanHeavy {
-          color: $mainColor2;
-          animation: spanHeavyText 2s ease-in-out;
-        }
+    .StartPage__UI_buttonHeavy:hover {
+      box-shadow: inset 0px 0px 25px $mainColor2;
+    }
+
+    .StartPage__UI_buttonLight:hover {
+      box-shadow: inset 0px 0px 25px $mainColor1;
+    }
+    .StartPage__UI_buttonSimple:hover {
+      box-shadow: inset 0px 0px 25px $mainColor3;
+    }
+    .StartPage__UI_hidden:hover {
+      box-shadow: inset 0px 0px 25px rgba(220, 190, 220);
+    }
+    .StartPage__UI_spanLight,
+    .StartPage__UI_spanHeavy {
+      font-weight: bold;
+    }
+
+    .StartPage__UI_spanLight {
+      color: $mainColor1;
+      animation: spanLightText 2s ease-in-out;
+    }
+
+    .StartPage__UI_spanHeavy {
+      color: $mainColor2;
+      animation: spanHeavyText 2s ease-in-out;
+    }
   }
 }
 
 //////// ================================== ANCHORS
 
-
-
 .StartPage__NewPageAnchors {
-
   position: fixed;
   width: 250px;
   height: 100vh;
@@ -278,37 +272,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  &::before, &::after {
 
-  transition: border-radius 1s ease, right 10s ease;
-	width: 100%;
-	height: 100%;
-	background: $backgroundDarkColor;
+  &::before,
+  &::after {
+    transition: border-radius 1s ease, right 10s ease;
+    width: 100%;
+    height: 100%;
+    background: $backgroundDarkColor;
   }
   &::before {
-    content: '';
+    content: "";
     border-radius: 0 0 0 0;
   }
   &::after {
-    content: '';
-	  border-radius: 0 0 0 0 ;
+    content: "";
+    border-radius: 0 0 0 0;
   }
 }
 
 .StartPage__NewPageAnchors_heavy {
-  background: linear-gradient(0deg, $backgroundDarkColor 4%, rgb(177, 9, 189) 5%, rgb(177, 9, 189) 95%, $backgroundDarkColor 96%);
+  background: linear-gradient(
+    0deg,
+    $backgroundDarkColor 4%,
+    rgb(177, 9, 189) 5%,
+    rgb(177, 9, 189) 95%,
+    $backgroundDarkColor 96%
+  );
   right: 0;
-  
 }
 
 .StartPage__NewPageAnchors_light {
-  background: linear-gradient(0deg, $backgroundDarkColor 4%, $mainColor1 5%, $mainColor1 95%, $backgroundDarkColor 96%);
+  background: linear-gradient(
+    0deg,
+    $backgroundDarkColor 4%,
+    $mainColor1 5%,
+    $mainColor1 95%,
+    $backgroundDarkColor 96%
+  );
   left: 0;
 }
 
 // ========= TOP EXTENSION
-  
+
 .StartPage__NewPageAnchors_topExtension {
   position: absolute;
   top: 15px;
@@ -320,14 +325,13 @@
   border: 10px solid rgb(177, 9, 189);
   left: 100%;
   border-width: 25px 0 0 25px;
-  border-radius: 30px 10% 0 0 ;
+  border-radius: 30px 10% 0 0;
 }
 .StartPage__NewPageAnchors_topExtension_light {
   border: 10px solid $mainColor1;
   right: 100%;
   border-width: 25px 25px 0 0;
-  // border-radius:  50% 50% 50% 0 ;
-  border-image: linear-gradient(to right, rgba(0,0,0,0), $mainColor1) 1;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $mainColor1) 1;
 }
 
 // ========= BOTTOM EXTENSION
@@ -342,13 +346,13 @@
   border: 10px solid rgb(177, 9, 189);
   left: 100%;
   border-width: 0 0 25px 25px;
-  border-radius: 0 0 10% 30px ;
+  border-radius: 0 0 10% 30px;
 }
 .StartPage__NewPageAnchors_bottomExtension_light {
   border: 10px solid $mainColor1;
   right: 100%;
   border-width: 0 25px 25px 0;
-  border-image: linear-gradient(to right, rgba(0,0,0,0), $mainColor1) 1;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), $mainColor1) 1;
 }
 
 // ========= ANCHOR TEXT
@@ -389,29 +393,29 @@
 
 // ========= ANCHOR ROUND BORDER
 
-.StartPage__NewPageAnchors_roundBorder_heavy{
+.StartPage__NewPageAnchors_roundBorder_heavy {
   &::before {
-    content: '';
-    transition: border-radius .3s ease;
+    content: "";
+    transition: border-radius 0.3s ease;
     border-radius: 0 0 70% 0;
   }
   &::after {
-    content: '';
-    transition: border-radius .3s ease;
-	  border-radius: 0 70% 0 0 ;
+    content: "";
+    transition: border-radius 0.3s ease;
+    border-radius: 0 70% 0 0;
   }
 }
 
-.StartPage__NewPageAnchors_roundBorder_light{
+.StartPage__NewPageAnchors_roundBorder_light {
   &::before {
-    content: '';
-    transition: border-radius .3s ease;
+    content: "";
+    transition: border-radius 0.3s ease;
     border-radius: 0 0 0 70%;
   }
   &::after {
-    content: '';
-    transition: border-radius .3s ease;
-	  border-radius: 70% 0 0 0 ;
+    content: "";
+    transition: border-radius 0.3s ease;
+    border-radius: 70% 0 0 0;
   }
 }
 
@@ -422,16 +426,15 @@
   right: 150%;
   z-index: 10;
   filter: blur(3px);
-  // FIX FOR DISAPPEARING PULL EFFECT OF THE PAGE
   &::before {
-    content: '';
-    transition: border-radius .3s ease;
+    content: "";
+    transition: border-radius 0.3s ease;
     border-radius: 0 0 70% 0;
   }
   &::after {
-    content: '';
-    transition: border-radius .3s ease;
-	  border-radius: 0 70% 0 0 ;
+    content: "";
+    transition: border-radius 0.3s ease;
+    border-radius: 0 70% 0 0;
   }
 }
 
@@ -439,16 +442,15 @@
   transition: all 1s ease;
   left: 150%;
   z-index: 10;
-  // FIX FOR DISAPPEARING PULL EFFECT OF THE PAGE
   &::before {
-    content: '';
-    transition: border-radius .3s ease;
+    content: "";
+    transition: border-radius 0.3s ease;
     border-radius: 0 0 0 70%;
   }
   &::after {
-    content: '';
-    transition: border-radius .3s ease;
-	  border-radius: 70% 0 0 0 ;
+    content: "";
+    transition: border-radius 0.3s ease;
+    border-radius: 70% 0 0 0;
   }
 }
 
@@ -462,55 +464,51 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  // display: grid;
-  // grid-template-columns: 4fr 1fr;
   top: -100%;
   gap: 25px;
   background: $backgroundDarkColor;
-  animation: navbarDivAnim .6s ease-in-out forwards, fadeIn .6s ease-in-out;
+  animation: navbarDivAnim 0.6s ease-in-out forwards, fadeIn 0.6s ease-in-out;
   .fastPreview__tab_display {
-    border: 1px solid rgba(255,255,255,.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     flex-grow: 1;
     position: relative;
     .fastPreview__tab_displayMain {
       padding: 15px;
-      border: 1px solid rgba(255,255,255,.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       position: absolute;
       top: 50%;
-      left:50%;
+      left: 50%;
       width: 80%;
-      transform: translate(-50%,-50%);
-      box-shadow: 0 0 4px rgba(255,255,255,.3);
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
       .fastPreview__tab_displayMain_pic {
         display: block;
         width: 100%;
         margin: auto;
       }
       .fastPreview__tab_info {
-        background-color: rgba(30,15,24,.3);
+        background-color: rgba(30, 15, 24, 0.3);
         padding: 10px 20px;
         font-size: 1.4rem;
-        border-top: 1px solid rgba(255,255,255,.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
         color: #fee;
-        .fastPreview__tab_displayMain_itemName, .fastPreview__tab_displayMain_itemDescription, .fastPreview__tab_displayMain_itemLink {
+        .fastPreview__tab_displayMain_itemName,
+        .fastPreview__tab_displayMain_itemDescription,
+        .fastPreview__tab_displayMain_itemLink {
           margin: 4px 0;
         }
         .fastPreview__tab_displayMain_itemName {
           font-weight: bold;
           font-size: 1.6rem;
         }
-        .fastPreview__tab_displayMain_itemDescription {
-  
-        }
+
         .fastPreview__tab_displayMain_itemLink {
-          
           display: block;
           a {
             color: white;
           }
         }
       }
-      
     }
   }
 
@@ -522,14 +520,12 @@
     scrollbar-color: #606060 #393939;
     scrollbar-width: thin;
 
-
     .fastPreview__tab_scrollContainer {
-      overflow-y:auto;
+      overflow-y: auto;
       overflow-x: hidden;
-      border: 1px solid rgba(255,255,255,.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       height: 90%;
       width: 100%;
-
 
       &::-webkit-scrollbar {
         height: 10px;
@@ -549,27 +545,18 @@
         border: 1px solid #393939;
         background-color: #393939;
       }
-      
 
       .fastPreview__tab_item {
         width: 100%;
         border: 3px solid transparent;
-        border-bottom: 2px solid rgba(255,255,255,.3);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
         min-height: 250px;
         height: max-content;
-        cursor:pointer;
-        transition: all .15s ease-in-out;
-        opacity: .6;
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+        opacity: 0.6;
         position: relative;
-        // &::before {
-        //   content: '';
-        //   right: 100%;
-        //   height: 100%;
-        //   width: 10px;
-        //   border-radius: 25px 0 0 25px;
-        //   opacity: 0;
-        //   position: absolute;
-        // }
+
         a {
           display: none;
         }
@@ -577,19 +564,18 @@
           .fastPreview__tab_itemImg {
             transform: scale(1.03);
           }
-          // &::before {
-          //   opacity: .3;
-          // }
-          border: 2px solid rgba(255,255,255,.5);
+
+          border: 2px solid rgba(255, 255, 255, 0.5);
           opacity: 1;
         }
         .fastPreview__tab_itemImg {
-          transition: all .15s ease-in-out;
+          transition: all 0.15s ease-in-out;
           display: block;
           padding: 10px;
           width: 100%;
         }
-        .fastPreview__tab_itemName, .fastPreview__tab_itemDescription {
+        .fastPreview__tab_itemName,
+        .fastPreview__tab_itemDescription {
           text-align: center;
         }
         .fastPreview__tab_itemName {
@@ -604,8 +590,7 @@
       }
     }
     .fastPreview__tab_return {
-      
-      border: 1px solid rgba(255,255,255,.4);
+      border: 1px solid rgba(255, 255, 255, 0.4);
       margin: auto;
       margin-top: 15px;
       text-align: center;
@@ -617,23 +602,22 @@
       font-weight: bold;
       position: relative;
       width: 100%;
-      cursor:pointer;
-      transition: all .3s ease-in-out;
-      color: rgba(255,255,255,.6);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      color: rgba(255, 255, 255, 0.6);
       &:hover {
         transform: scale(1.02);
-        box-shadow: inset 0 0 9px 3px rgba(255,255,255,.4);
-        color: rgba(255,255,255,1);
+        box-shadow: inset 0 0 9px 3px rgba(255, 255, 255, 0.4);
+        color: rgba(255, 255, 255, 1);
       }
       span {
         position: absolute;
         top: 50%;
-        left:50%;
+        left: 50%;
         width: 100%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
       }
     }
-
   }
 }
 
@@ -644,34 +628,27 @@
         position: relative;
       }
       .fastPreview__tab_return {
-        // position: absolute !important;
-        // bottom: 0;
-        // left: 0;
-        // width: 100%;
         position: relative;
         margin-bottom: 65px;
-        height:15%;
+        height: 15%;
         font-size: 2rem;
-        // background: #393939;
       }
     }
   }
-  
 }
 
 .fastPreview__tab_hide {
-  animation: fadeOut .6s ease-in-out,
+  animation: fadeOut 0.6s ease-in-out;
 }
 
 //////// ================================== ANIMATIONS
-
 
 @keyframes fadeInOpacity04 {
   0% {
     opacity: 0;
   }
   100% {
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 
@@ -684,50 +661,58 @@
   }
 }
 
-@keyframes slowAppear{
-  0% {opacity: 0}
-  100%{ opacity: 1}
+@keyframes slowAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes buttonAppear {
   0% {
-    color: rgba(0,0,0,0);
-
+    color: rgba(0, 0, 0, 0);
   }
   100% {
-    color: rgba(255,255,255,1);
-
+    color: rgba(255, 255, 255, 1);
   }
 }
 
 @keyframes spanHeavyText {
-  0% {color: rgba(0,0,0,0)}
-  100% {color: rgba(243, 94, 255,1)}
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: rgba(243, 94, 255, 1);
+  }
 }
 
 @keyframes spanLightText {
-  0% {color: rgba(0,0,0,0)}
-  100% {color: rgba(94, 188, 255,1)}
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: rgba(94, 188, 255, 1);
+  }
 }
 
 ////////////////////// media queries
 
 @media only screen and (max-width: 1670px) {
   .StartPage__UI_tab {
-    .StartPage__UI  {
-      button, a {
+    .StartPage__UI {
+      button,
+      a {
         width: 250px;
       }
-      
     }
-    .StartPage__NewPageAnchors  {
+    .StartPage__NewPageAnchors {
       width: 150px;
     }
   }
   .StartComponent__holder {
     position: relative;
-  
-    
   }
 }
 
@@ -736,34 +721,31 @@
     display: none;
   }
   .StartPage__UI_tab {
-    .StartPage__UI  {
+    .StartPage__UI {
       flex-direction: column;
       gap: 30px;
       align-items: center;
       top: 50%;
       transform: translate(-50%, -50%);
-      button, a {
-        width:50%
+      button,
+      a {
+        width: 50%;
       }
       .StartPage__UI_hidden {
         display: block;
       }
     }
-    .StartPage__NewPageAnchors  {
+    .StartPage__NewPageAnchors {
       width: 120px;
     }
   }
   .StartComponent__holder {
-  
     .App_particleDiv {
-      left: 50% ;
+      left: 50%;
       top: 23%;
-      
-    } 
-    
+    }
   }
 }
-
 
 @media only screen and (max-width: 1100px) {
   .fastPreview__tab {
@@ -773,7 +755,6 @@
     .fastPreview__tab_scroll {
       width: 100%;
       .fastPreview__tab_scrollContainer {
-
         .fastPreview__tab_item {
           padding: 30px;
           a {
@@ -785,14 +766,11 @@
           }
         }
       }
-      
     }
   }
 }
 
-
 @media only screen and (max-width: 650px) {
-
   .fastPreview__tab {
     .fastPreview__tab_scroll {
       .fastPreview__tab_scrollContainer {
@@ -803,38 +781,32 @@
           }
         }
       }
-      
     }
   }
-
 
   .StartPage__Footer {
     display: none;
   }
   .StartPage__UI_tab {
-    
-    .StartPage__UI  {
+    .StartPage__UI {
       flex-direction: column;
       gap: 30px;
 
-      button, a {
-        width:100%;
+      button,
+      a {
+        width: 100%;
         background: $backgroundDarkColor;
       }
     }
-    .StartPage__NewPageAnchors  {
+    .StartPage__NewPageAnchors {
       display: none;
     }
-
   }
   .StartComponent__holder {
-  
     .App_particleDiv {
-      left: 50% ;
+      left: 50%;
       top: 23%;
-      
-    } 
-    
+    }
   }
 }
 
@@ -849,7 +821,6 @@
           }
         }
       }
-      
     }
   }
 }

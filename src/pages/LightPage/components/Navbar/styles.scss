@@ -1,85 +1,76 @@
-
 //////////////////////////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////////////////////////////
 /// ////////////////////////////////////////////////////////////////////////////////////////////////// NAVBAR
 
-    
-    
-  
-    .img__navbar_div {
-      position: fixed;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      top: -100%;
-      left: 50%;
-      transform: translate(-50%, 0);
-      animation: navbarDivAnim 2s ease-in-out .5s forwards;
-      z-index: 7;
-  
-    }
-    .img__navbar_span {
-      // font-family: 'JapFont', sans-serif;
-      font-family: 'NukuNuku', sans-serif;
-      display: inline-block;
-      white-space: nowrap;
-      font-size: 2rem;
-      color: #c3c5c5;
-      margin: 0 10px;
-      text-shadow: 0px 0px 10px 5px green;
-      letter-spacing: .3rem;
-      background-color: rgb(221, 40, 61);
-      // background-color: rgb(255, 17, 0);
-      border: 6px solid #c3c5c5;
-      user-select: none;
-      border-top: 0;
-      padding: 3% 2% 4%;
-      border-radius: 0 0 35% 35%;
-      transition: all .3s ease-in-out;
-      box-shadow: 0 0 5px 5px rgba(0,0,0,.5);
-      cursor: pointer;
-      &:hover {
-        color: #dadddd;
-        transition: all .1s ease-in-out;
-        border-color: #dadddd;
-        box-shadow: 0 0 10px 5px rgba(0,0,0,.7);
-        background-color: rgb(220, 25, 47);
-      }
-      &:active {
-        padding: 3.5% 2% 4%;
-      }
-    }
-    .img__navbar_spanBlog {
-      font-family: 'JapFont', sans-serif;
-      background-color: rgb(175, 57, 10);
-      &:hover {
-        
-        background-color: rgb(214, 103, 59);
-      }
-    }
-    .img__navbar_spanActive {
-      padding-top: 5%;
-      border-color: #dadddd;
-      color: #dadddd;
-      box-shadow: 0 0 5px 5px rgba(0,0,0,.6);
-      background-color: rgb(220, 25, 47);
-      
-      &:active {
-        padding: 5% 2% 4%;
-      }
-      &:hover {
-        border-color: #dadddd;
-        color: #dadddd;
-        background-color: rgb(221, 19, 43);
-      }
-    }
+.img__navbar_div {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: navbarDivAnim 2s ease-in-out 0.5s forwards;
+  z-index: 7;
+}
+.img__navbar_span {
+  font-family: "NukuNuku", sans-serif;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 2rem;
+  color: #c3c5c5;
+  margin: 0 10px;
+  text-shadow: 0px 0px 10px 5px green;
+  letter-spacing: 0.3rem;
+  background-color: rgb(221, 40, 61);
+  border: 6px solid #c3c5c5;
+  user-select: none;
+  border-top: 0;
+  padding: 3% 2% 4%;
+  border-radius: 0 0 35% 35%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  &:hover {
+    color: #dadddd;
+    transition: all 0.1s ease-in-out;
+    border-color: #dadddd;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgb(220, 25, 47);
+  }
+  &:active {
+    padding: 3.5% 2% 4%;
+  }
+}
+.img__navbar_spanBlog {
+  font-family: "JapFont", sans-serif;
+  background-color: rgb(175, 57, 10);
+  &:hover {
+    background-color: rgb(214, 103, 59);
+  }
+}
+.img__navbar_spanActive {
+  padding-top: 5%;
+  border-color: #dadddd;
+  color: #dadddd;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.6);
+  background-color: rgb(220, 25, 47);
 
+  &:active {
+    padding: 5% 2% 4%;
+  }
+  &:hover {
+    border-color: #dadddd;
+    color: #dadddd;
+    background-color: rgb(221, 19, 43);
+  }
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////////////////////////////
 /// ////////////////////////////////////////////////////////////////////////////////////////////////// Queries
-    
+
 @media only screen and (max-width: 1280px) {
   .img__navbar_div {
     .img__navbar_span {
@@ -96,6 +87,18 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .img__navbar_div {
+    .img__navbar_span {
+      letter-spacing: 0.1rem;
+      margin: 0 5px;
+      font-size: 1.2rem;
+      border: 3px solid #c3c5c5;
+      padding: 4% 3% 4%;
+    }
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .img__navbar_div {
     .img__navbar_span {
@@ -107,7 +110,7 @@
     }
     .img__navbar_spanActive {
       padding: 5% 1% 2%;
-      background-color: rgb(192, 18, 38)
+      background-color: rgb(192, 18, 38);
     }
   }
 }
