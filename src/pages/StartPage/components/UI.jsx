@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import NewPageAnchors from "./NewPageAnchors";
 import TopUi from "./TopUi";
 
-const UI = ({ color, setColor, handleClick, toggleQuickPreview }) => {
+const UI = ({
+  toggleShowInfo,
+  color,
+  setColor,
+  handleClick,
+  toggleQuickPreview,
+}) => {
   const [hoverOver, setHoverOver] = useState("none");
   const [newSelectedPage, setNewSelectedPage] = useState("none");
 
@@ -72,10 +78,12 @@ const UI = ({ color, setColor, handleClick, toggleQuickPreview }) => {
           }}
           onMouseLeave={() => {
             handlePageAnchors("none");
+            toggleShowInfo(false);
           }}
           onMouseEnter={() => {
             handleHover("#5ebcff");
             handlePageAnchors("light");
+            toggleShowInfo(true);
           }}
         >
           <span className="StartPage__UI_spanLight">OLD 2D</span>
@@ -92,8 +100,10 @@ const UI = ({ color, setColor, handleClick, toggleQuickPreview }) => {
           className="StartPage__UI_buttonHeavy"
           onMouseLeave={() => {
             handlePageAnchors("none");
+            toggleShowInfo(false);
           }}
           onMouseEnter={() => {
+            toggleShowInfo(true);
             handleHover("#f35eff");
             handlePageAnchors("heavy");
           }}

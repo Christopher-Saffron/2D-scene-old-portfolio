@@ -14,6 +14,7 @@ const StartComponent = ({ webpageMode, handleClick }) => {
   const [color, setColor] = useState("#fff");
   const [showParticles, setShowParticles] = useState(true);
   const [foxScale, setFoxScale] = useState(1.1);
+  const [showInfo, toggleShowInfo] = useState(false);
 
   function changeFoxSize() {
     if (window.innerWidth > 1400) {
@@ -62,9 +63,10 @@ const StartComponent = ({ webpageMode, handleClick }) => {
         </div>
       )}
 
-      <Footer color={color} webpageMode={webpageMode} />
+      <Footer showInfo={showInfo} color={color} webpageMode={webpageMode} />
 
       <Ui
+        toggleShowInfo={toggleShowInfo}
         toggleQuickPreview={toggleQuickPreview}
         color={color}
         setColor={setColor}

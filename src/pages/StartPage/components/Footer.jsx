@@ -2,7 +2,7 @@ import React from "react";
 
 //// BASED ON PROVIDED COLOR (THAT CHANGES ON HOVER ON BUTTON) SHOW INFORMATION ABOUT THE POTENTIAL WEBPAGE
 
-const Footer = ({ color, webpageMode }) => {
+const Footer = ({ color, webpageMode, showInfo }) => {
   return (
     <div
       className={
@@ -10,7 +10,7 @@ const Footer = ({ color, webpageMode }) => {
         (webpageMode !== "start" ? "StartPage__Footer_disappear" : "")
       }
     >
-      {color === "#5ebcff" && (
+      {color === "#5ebcff" && showInfo && (
         <p
           className="StartPage__Footer_additionalText"
           style={{ color: "#5ebcff" }}
@@ -19,7 +19,7 @@ const Footer = ({ color, webpageMode }) => {
           me.
         </p>
       )}
-      {color === "#f35eff" && (
+      {color === "#f35eff" && showInfo && (
         <>
           <p
             className="StartPage__Footer_additionalText"
