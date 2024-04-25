@@ -22,11 +22,11 @@ const PROJECTLIST = [
   },
   {
     img: "airbnb.jpg",
-    name: "Airbnb",
+    name: "Nippon Air",
     description:
-      "Airbnb with 3d models, dates, reservation, mongoose database, google auth login, maps",
-    link: "https://havirbnb.vercel.app/",
-    linkGithub: "https://github.com/Havir-S/havirbnb",
+      "Nippon Air with 3d models, dates, reservation, mongoose database, google auth login, maps",
+    link: "https://nipponair.vercel.app/",
+    linkGithub: "https://github.com/Christopher-Saffron/NipponAir-ONLINE-MARKETPLACE",
   },
   {
     img: "szafranprojekt2.jpg",
